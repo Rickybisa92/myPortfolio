@@ -9,7 +9,7 @@
 84C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\css-textshadow.js133737201214002976 0
 77C:\Users\Ricky\myPortfolio\node_modules\svgo\lib\svgo\css-select-adapter.d.ts133737201194299188 0
 83C:\Users\Ricky\myPortfolio\node_modules\@parcel\core\src\requests\PackageRequest.js133737201209691262 0
-39C:\Users\Ricky\myPortfolio\package.json133737224273174922 0
+39C:\Users\Ricky\myPortfolio\package.json133737224822893657 0
 92C:\Users\Ricky\myPortfolio\node_modules\@swc\helpers\_\_iterable_to_array_limit\package.json133737201209585762 0
 44C:\Users\Ricky\myPortfolio\package-lock.json133737201548697982 0
 71C:\Users\Ricky\myPortfolio\node_modules\@parcel\core\test\utils.test.js133737201212204081 0
