@@ -11,7 +11,7 @@
 }
 
 body {
-    background: url(/img/cool-background.png);
+    background: url(../img/cool-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;

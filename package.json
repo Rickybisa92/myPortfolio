@@ -2,10 +2,10 @@
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "This is my personal portfolio",
-  "source": "src/myPortfolio.html",
+  "source": "src/MyPortfolio.html",
   "scripts": {
-    "build": "npx parcel build src/myPortfolio.html",
-    "start": "npx parcel src/myPortfolio.html",
+    "build": "npx parcel build src/MyPortfolio/index.html",
+    "start": "npx parcel src/MyPortfolio/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ricardo Bisañez",
