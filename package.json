@@ -1,0 +1,17 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Bisañez",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
