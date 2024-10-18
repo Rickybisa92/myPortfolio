@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "This is my personal portfolio",
-  "source": "src/MyPortfolio.html",
+  "source": "src/MyPortfolio/index.html",
   "scripts": {
     "build": "npx parcel build src/MyPortfolio/index.html",
     "start": "npx parcel src/MyPortfolio/index.html",

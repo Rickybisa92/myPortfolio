@@ -21,9 +21,19 @@ span {
     margin: auto;
 }
 
+.logo-name {
+    color: #24233b;
+}
+
+.logo-name:hover {
+    color: #444444 !important;
+    transform: translateY(-3px);
+  transition: 0.3s;
+}
+
 
 .nav-link {
-    color: black !important;
+    color: #24233b !important;
     font-size: 20px !important;
 }
 
