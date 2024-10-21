@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    --color-texto: rgb(255, 255, 255);
+    --sombras-texto: 5px 5px 4px rgba(60, 224, 183, 0.56);
+    --color-transición: black;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+    background-image: url(/img/pexels-photo-685531.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.contenedorTitulo {
+    font-family: Wallpoet;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+h1 {
+    color: var(--color-texto);
+    text-shadow: var(--sombras-texto);
+
+}
+
+
+
+.contenedorTitulo i {
+    font-size: 35px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    color: antiquewhite;
+    text-shadow: var(--sombras-texto);
+}
+
+.contenedorTitulo i:hover {
+    animation: girar 2s infinite linear;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contenedorTitulo:not(:hover) i {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.tarifas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.descripción {
+    font-family: Kdam Thmor pro;
+    max-width: 20%;
+    margin-top: 15%;
+    color: var(--color-texto);
+    text-shadow: var(--sombras-texto);
+    text-align: center;
+}
+
+
+.tarjeta {
+    font-family: Kdam Thmor pro;
+    max-width: 15%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(158, 246, 224, 0.56);
+    text-align: center;
+    margin: 15px;
+    margin-top: 50px;
+    background: linear-gradient(90deg, rgba(60, 59, 59, 0.608) 0%, rgba(117, 117, 117, 0.674) 35%);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.tarjeta:hover h2,
+.tarjeta:hover h3,
+.tarjeta:hover .precio,
+.tarjeta:hover .datos,
+.tarjeta:hover .euro {
+    color: var(--color-transición);
+}
+
+.tarjeta h2 {
+    color: var(--color-texto);
+    text-shadow: var(--sombras-texto);
+    margin: 0;
+}
+
+
+.tarjeta h3 {
+    color: var(--color-texto);
+    margin: 0;
+}
+
+.precio {
+    color: var(--color-texto);
+    font-size: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 5px;
+    margin: 0px;
+}
+
+.euro {
+    color: var(--color-texto);
+    font-size: 14px;
+    margin: 0;
+}
+
+.datos {
+    color: var(--color-texto);
+    list-style: none;
+    padding: 0;
+    font-style: italic;
+}
+
+.botonPrimario {
+    background-color: #4caf50;
+    color: white;
+    box-shadow: 2px 2px 2px #fdfffd;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.botonSecundario {
+    background-color: #fdfffd;
+    box-shadow: 2px 2px 2px black;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+footer a {
+    font-family: Kdam Thmor pro;
+    text-decoration: none;
+    color: var(--color-texto);
+    float: right;
+    margin-right: 10%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-shadow: var(--sombras-texto);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        background-image: url(/img/pexels-photo-685531.jpeg);
+        background-size: cover;
+    }
+
+    .tarifas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descripción {
+        font-family: Kdam Thmor pro;
+        max-width: 50%;
+        margin-top: 15%;
+        color: var(--color-texto);
+        text-shadow: var(--sombras-texto);
+        text-align: center;
+    }
+
+    .tarjeta {
+        font-family: Kdam Thmor pro;
+        max-width: 50%;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 5px 5px 4px rgba(158, 246, 224, 0.56);
+        text-align: center;
+        margin: 15px;
+        margin-top: 50px;
+        background: linear-gradient(90deg, rgba(60, 59, 59, 0.608) 0%, rgba(117, 117, 117, 0.674) 35%);
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .tarjeta:hover{
+        transform: none;
+    }
+}

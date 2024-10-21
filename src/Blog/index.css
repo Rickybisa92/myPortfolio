@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+
+:root {
+    --colorTexto: rgb(127, 85, 57);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Shadows Into Light";
+    background-color: rgb(230, 204, 178);
+    font-size: larger;
+
+}
+
+
+nav {
+    font-family: Acme;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(176, 137, 104);
+    text-align: center;
+
+}
+
+nav a {
+    padding: 10px 20px;
+    margin: 0 auto;
+    float: left;
+    text-decoration: none;
+    color: aliceblue;
+    box-sizing: border-box;
+    width: 25%;
+    transition: color;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+    background-color: #ecc29c;
+    color: aquamarine;
+    transition: background-color 0.5s;
+
+}
+
+.banner {
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid black;
+    background-image: url("/img/banner-931.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.contenido {
+    font-family: Acme;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 5px solid rgb(127, 85, 57);
+}
+
+
+
+.fecha {
+    float: right;
+    color: var(--colorTexto);
+}
+
+.titulo {
+    float: top, left;
+    color: var(--colorTexto);
+}
+
+
+.barra-texto {
+    border-left: 2px solid rgb(131, 45, 45);
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.fecha,
+.titulo {
+    clear: both;
+}
+
+.divider {
+    margin: 25px auto;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #93322f, transparent);
+}
+
+footer {
+    font-family: Acme;
+}
+
+.contenedor2 {
+    margin: 0 auto;
+    width: 59%;
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha a{
+    float: right;
+    text-decoration-line: none;
+}
+
+
+
+.Galeria {
+    text-align: center;
+}
+
+
+img {
+    width: 25%;
+    min-width: 80px;
+    padding: 3px;
+    margin: 4px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(131, 45, 45);
+    border-radius: 5px;
+    background-color: rgb(176, 137, 104);
+    opacity: 0.8;
+    box-sizing: border-box;
+}
+
+img:hover {
+    opacity: 1;
+}
+

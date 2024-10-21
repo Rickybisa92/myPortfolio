@@ -32,9 +32,10 @@ main {
     transition: 400ms;
 }
 
-.second-text {
+.links {
     font-size: 20px;
-    margin: 0%;
+    text-decoration: none;
+    color: white;
 }
 
 .cards .card:hover {
