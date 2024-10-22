@@ -1,0 +1,424 @@
+/* Estilos generales */
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif; /* Asegúrate de que la fuente se aplique correctamente */
+}
+
+/* Estilo de fondo */
+body {
+    background: url(../img/cool-background.png) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Estilos para el encabezado */
+header {
+    color: #444444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #24233b; /* Color inicial del texto */
+    font-size: larger;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 20px; /* Bordes redondeados para forma ovalada */
+    transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover */
+nav ul li a:hover {
+    background-color: #2a2a43; /* Color de fondo al pasar el ratón */
+    color: white; /* Cambiar color del texto a blanco */
+    transform: translateY(-2px) scale(1.0); /* Elevar y aumentar el tamaño */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Estilos generales para todas las secciones */
+section {
+    display: none; /* Ocultamos todas las secciones por defecto */
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out; /* Efecto de transición */
+    height: 100%; /* Asegúrate de que las secciones ocupen el espacio */
+}
+
+/* Mostramos la sección cuando coincide con el hash */
+section:target {
+    display: block; /* Mostramos la sección seleccionada */
+}
+
+/* Mostramos la sección 'about' por defecto */
+
+/* Si quieres aplicar estilos específicos cuando #about es el objetivo */
+#about:target {
+    display: flex; /* Muestra como flex cuando es objetivo */
+}
+
+/* Estilos específicos para la sección #about */
+#about {
+    flex-direction: row; /* Alineación vertical */
+    justify-content:space-evenly; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    
+}
+
+
+  .card {
+    width: 670px;
+    height: 505px;
+    background-color: #383855;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0px 10px 10px rgb(73, 70, 92);
+    transition: 0.5s;
+  }
+  
+  .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 10px black;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .circle {
+    padding: 0 4px;
+  }
+  
+  .circle2 {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+  
+  .header {
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .title {
+    margin: auto;
+  }
+  
+  #title2 {
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    margin-right: 70px;
+  }
+  
+  .code-container {
+    text-align: center;
+  }
+  #code {
+    width: 650px;
+    height: 470px;
+    resize: none;
+    background-color: rgb(73, 70, 92);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 19px;
+  }
+  #code:focus {
+    outline: none !important;
+  }
+  
+  .code-container {
+    font-size: larger;
+  }
+  
+  
+  .code-editor {
+    max-width: 300px;
+    background-color: #1d1e22;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 2px;
+  }
+  
+  /* before adding the photo to the div with the "card-photo" class, in the css clear the styles for .card-photo and remove .card-photo::before and .card-photo::after, then set the desired styles for .card- photo. */
+  
+  .card-presentation {
+    --font-color: #fefefe;
+    --font-color-sub: #d8cece;
+    --bg-color: rgb(73, 70, 92);
+    --main-color: #fefefe;
+    width: 220px;
+    height: 320px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-photo {
+    width: 170px;
+    height: 170px;
+    border-radius:50%;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  
+  .card-photo img {
+    width: 130%;
+    height: 130%;
+    object-fit: cover;
+  }
+  
+  
+  .card-title {
+    text-align: center;
+    color: var(--font-color) !important;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .card-title span {
+    font-size: 15px;
+    color: var(--font-color-sub);
+  }
+  
+  .card-socials {
+    display: flex;
+    height: 0;
+    opacity: 0;
+    margin-top: 10px;
+    gap: 20px;
+    transition: 0.5s;
+  }
+  
+  .card-socials-btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .card-socials-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+  }
+  
+  .card-presentation:hover > .card-socials {
+    opacity: 1;
+    height: 35px;
+  }
+  
+  .card-socials-btn:hover {
+    transform: translateY(-5px);
+    transition: all 0.15s;
+  }
+  
+  .links {
+    margin: auto;
+    padding: 0px;
+  }
+
+  /*estilo html proyectos */
+
+  /* Si quieres aplicar estilos específicos cuando #about es el objetivo */
+#projects:target {
+    display: flex; /* Muestra como flex cuando es objetivo */
+}
+
+/* Estilos específicos para la sección #about */
+#projects {
+    flex-direction: row; /* Alineación vertical */
+    justify-content:space-evenly; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    margin-top: 20px;
+    
+}
+
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards .card {
+    background:  rgb(89, 85, 113);
+}
+
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 70px;
+    width: 270px;
+    border-radius: 10px;
+    color: rgb(219, 219, 219);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.links {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+    background-color:#24233b;
+}
+
+.cards:hover>.card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+  @media screen and (max-width: 768px) {
+
+    body {
+        background: url(../img/cool-background.png) no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+
+    nav ul {
+        justify-content: space-evenly; /* Espacio entre elementos */
+    }
+
+    nav ul li {
+        margin: 0 2px; /* Reducir el margen para que quepan más elementos en la pantalla */
+    }
+
+
+    #about:target {
+        display: flex;
+    }
+    
+
+    #about {
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .card {
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+      background-color: #24233b;
+      border-radius: 8px;
+      z-index: 1;
+      box-shadow: 0px 10px 10px rgb(73, 70, 92);
+      transition: 0.5s;
+    }
+  
+    #code {
+      width: 330px;
+      height: 310px;
+      resize: none;
+      background-color: rgb(73, 70, 92);
+      border-radius: 5px;
+      border: none;
+      color: white;
+      padding: 10px;
+      font-size: medium;
+    }
+  
+    .code-container {
+      font-size:medium;
+    }
+  
+    .card-presentation {
+      --font-color: #fefefe;
+      --font-color-sub: #c0bfbf;
+      --bg-color: rgb(73, 70, 92);
+      --main-color: #fefefe;
+      width: 200px;
+      height: 274px;
+      background: var(--bg-color);
+      border: 2px solid var(--main-color);
+      box-shadow: 4px 4px var(--main-color);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  
+    .card-photo {
+      width: 130px;
+      height: 130px;
+      border-radius:50%;
+      overflow: hidden; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      
+    }
+    
+    .card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    
+  }
+
+  
+  
