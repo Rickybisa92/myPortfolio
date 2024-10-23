@@ -17,7 +17,7 @@
     display: flex;
   flex-direction: column; /* Organiza los elementos en una columna */
   justify-content: space-around; /* Distribuye el espacio uniformemente */
-  height: 180px; /* Asigna un alto para que se vea el espacio entre los elementos */
+  height: 250px; /* Asigna un alto para que se vea el espacio entre los elementos */
     
 
   }
@@ -106,7 +106,33 @@
     box-shadow: 0 0 0 0 black; /* Elimina la sombra */
   }
 
-
+  .button-gmail {
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    padding: 10px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    border: solid black 2px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
+    transition: background-color 0.3s ease-inout;
+    box-shadow: 0px 0px 0px 0px black; /* Sombra inicial */
+    position: relative; /* Necesario para que funcione el efecto */
+  }
+  
+  .button-gmail:hover {
+    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
+    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
+    background-color: rgb(255, 0, 51);
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  .button-gmail:active {
+    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
+    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
+  }
 
   
   
