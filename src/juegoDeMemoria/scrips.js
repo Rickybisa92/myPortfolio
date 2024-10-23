@@ -122,7 +122,7 @@ function generarCartas(cartaValues, rows, cols) {
     cartaValues = [...cartaValues, ...cartaValues];
     cartaValues.sort(() => Math.random() - 0.5);
 
-    const imagenDelantera = '/img/parte-delantera.png';
+    const imagenDelantera = '../img/parte-delantera.png';
 
     // Iterar sobre cada posición del tablero
     for (let i = 0; i < rows * cols; i++) {
