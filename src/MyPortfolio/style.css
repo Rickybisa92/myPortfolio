@@ -13,7 +13,7 @@
 
 /* Estilo de fondo */
 body {
-  background: url(../img/cool-background.png) no-repeat;
+  background: url(./img/cool-background.png) no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
