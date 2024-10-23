@@ -49,7 +49,7 @@ nav ul li a {
   /* Espaciado alrededor del texto */
   border-radius: 20px;
   /* Bordes redondeados para forma ovalada */
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   /* Transiciones suaves */
 }
 

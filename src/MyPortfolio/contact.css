@@ -6,77 +6,79 @@
   /* Estilos específicos para la sección #about */
   #contact {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 2%;
   
   }
 
-  /* From Uiverse.io by aguerquin */
   
-  .contenedor-contacts {
+  .contenedor-contact {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: space-around; /* Distribuye el espacio uniformemente */
+  height: 120px; /* Asigna un alto para que se vea el espacio entre los elementos */
+    
+
+  }
+  
+  .button-github {
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    padding: 10px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    border: solid black 2px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
+    transition: background-color 0.3s ease-inout;
+    box-shadow: 0px 0px 0px 0px black; /* Sombra inicial */
+    position: relative; /* Necesario para que funcione el efecto */
+  }
+  
+  .button-github:hover {
+    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
+    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border:  solid rgb(255, 255, 255) 2px;
+  }
+  
+  .button-github:active {
+    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
+    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
+  }
+
+  .button-telegram {
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    padding: 10px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    border: solid black 2px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
+    transition: background-color 0.3s ease-inout;
+    box-shadow: 0px 0px 0px 0px black; /* Sombra inicial */
+    position: relative; /* Necesario para que funcione el efecto */
+  }
+  
+  .button-telegram:hover {
+    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
+    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
+    background-color: rgb(0, 183, 255);
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  .button-telegram:active {
+    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
+    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
   }
 
 
-.button-icon {
-    display: flex;
-    border: 3px #fff solid;
-    width: fit-content;
-    height: fit-content;
-    cursor: pointer;
-  }
+
   
-  .icon {
-    background-color: #fff;
-    padding: 10px 10px 5px 10px;
-  }
-  
-  .icon svg {
-    width: 25px;
-    height: 25px;
-  }
-  
-  .cube {
-    transition: all 0.4s;
-    transform-style: preserve-3d;
-    width: 200px;
-    height: 20px;
-  }
-  
-  .button-icon:hover {
-    border-color: #ff98a2;
-  }
-  
-  .button-icon:hover .cube {
-    transform: rotateX(90deg);
-  }
-  
-  .side {
-    position: absolute;
-    height: 47px;
-    width: 200px;
-    display: flex;
-    font-size: 0.8em;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-  }
-  
-  .top {
-    background: #ff98a2;
-    color: #fff;
-    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
-  }
-  
-  .front {
-    background: #222229;
-    color: #fff;
-    transform: translate3d(0, 0, 1em);
-  }
   
