@@ -1,4 +1,4 @@
-6553
+6554
 64C:\Users\Ricky\myPortfolio\node_modules\css-tree\dist\csstree.js133737201211941879 0
 84C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\css-textshadow.js133737201214002976 0
 77C:\Users\Ricky\myPortfolio\node_modules\svgo\lib\svgo\css-select-adapter.d.ts133737201194299188 0
@@ -7,7 +7,7 @@
 39C:\Users\Ricky\myPortfolio\package.json133742635143700559 0
 92C:\Users\Ricky\myPortfolio\node_modules\@swc\helpers\_\_iterable_to_array_limit\package.json133737201209585762 0
 62C:\Users\Ricky\myPortfolio\node_modules\semver\functions\eq.js133737201190980491 0
-40C:\Users\Ricky\myPortfolio\src\Bootstrap133740957535447342 1
+40C:\Users\Ricky\myPortfolio\src\Bootstrap133742656657791492 1
 90C:\Users\Ricky\myPortfolio\node_modules\@popperjs\core\lib\modifiers\popperOffsets.js.flow133737201544308251 0
 102C:\Users\Ricky\myPortfolio\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md133737201205129590 0
 44C:\Users\Ricky\myPortfolio\package-lock.json133742635144428316 0
@@ -89,7 +89,7 @@
 96C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib\svgo\coa.js133737201191460037 0
 86C:\Users\Ricky\myPortfolio\node_modules\node-gyp-build-optional-packages\build-test.js133737201187168397 0
 88C:\Users\Ricky\myPortfolio\node_modules\@parcel\packager-wasm\src\wasm-sourcemap.js.flow133737201186858105 0
-51C:\Users\Ricky\myPortfolio\src\Bootstrap\ambum.html133742654803910714 0
+51C:\Users\Ricky\myPortfolio\src\Bootstrap\ambum.html133742656847960405 0
 66C:\Users\Ricky\myPortfolio\node_modules\bootstrap\js\dist\modal.js133737201543653511 0
 72C:\Users\Ricky\myPortfolio\node_modules\@mischnic\json-sourcemap\LICENSE133737201186250361 0
 56C:\Users\Ricky\myPortfolio\src\formularioJS\validados.js133741531057931636 0
@@ -1386,6 +1386,7 @@
 88C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\css-grid-animation.js133737201212119664 0
 68C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\minifyStyles.js133737201207810616 0
 62C:\Users\Ricky\myPortfolio\node_modules\svgo\lib\svgo\tools.js133737201195965511 0
+53C:\Users\Ricky\myPortfolio\src\Bootstrap\bootstrap.js133500477050825967 0
 91C:\Users\Ricky\myPortfolio\node_modules\@popperjs\core\lib\dom-utils\isScrollParent.js.flow133737201543863306 0
 56C:\Users\Ricky\myPortfolio\node_modules\lmdb\index.d.cts133737201209651079 0
 69C:\Users\Ricky\myPortfolio\node_modules\css-tree\lib\syntax\create.js133737201211592361 0
