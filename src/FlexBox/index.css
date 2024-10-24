@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: cadetblue;
-    background-image: url(/src/img/pexels-photo-685531.jpeg);
+    background-image: url(../img/pexels-photo-685531.jpeg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -189,7 +189,7 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
     .body {
-        background-image: url(/img/pexels-photo-685531.jpeg);
+        background-image: url(../img/pexels-photo-685531.jpeg);
         background-size: cover;
     }
 

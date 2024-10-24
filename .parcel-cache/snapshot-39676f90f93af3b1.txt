@@ -1,4 +1,4 @@
-6554
+6553
 64C:\Users\Ricky\myPortfolio\node_modules\css-tree\dist\csstree.js133737201211941879 0
 84C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\css-textshadow.js133737201214002976 0
 77C:\Users\Ricky\myPortfolio\node_modules\svgo\lib\svgo\css-select-adapter.d.ts133737201194299188 0
@@ -11,12 +11,10 @@
 90C:\Users\Ricky\myPortfolio\node_modules\@popperjs\core\lib\modifiers\popperOffsets.js.flow133737201544308251 0
 102C:\Users\Ricky\myPortfolio\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md133737201205129590 0
 44C:\Users\Ricky\myPortfolio\package-lock.json133742635144428316 0
-115C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\parse.js133737201209736460 0
-59C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\manifest.json133742655042244511 0
 70C:\Users\Ricky\myPortfolio\node_modules\@lmdb\lmdb-win32-x64\README.md133737201187076913 0
 92C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Block.cjs133737201190524529 0
 81C:\Users\Ricky\myPortfolio\node_modules\csso\cjs\restructure\3-disjoinRuleset.cjs133737201187917549 0
-51C:\Users\Ricky\myPortfolio\src\Bootstrap\login.html133742653872901556 0
+51C:\Users\Ricky\myPortfolio\src\Bootstrap\login.html133742662948136654 0
 90C:\Users\Ricky\myPortfolio\node_modules\dom-serializer\node_modules\entities\lib\decode.js133737201187392489 0
 65C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\prefixIds.js133737201208029474 0
 73C:\Users\Ricky\myPortfolio\node_modules\cosmiconfig\dist\loaders.d.ts.map133737201195829450 0
@@ -55,7 +53,7 @@
 79C:\Users\Ricky\myPortfolio\node_modules\@swc\helpers\src\_apply_decs_2203_r.mjs133737201216485047 0
 65C:\Users\Ricky\myPortfolio\node_modules\@parcel\namer-default\src133737201187370816 1
 65C:\Users\Ricky\myPortfolio\node_modules\domutils\lib\stringify.js133737201189901405 0
-56C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\index.html133741769438037605 0
+56C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\index.html133742660165647410 0
 86C:\Users\Ricky\myPortfolio\node_modules\css-tree\cjs\syntax\node\AttributeSelector.cjs133737201190269702 0
 95C:\Users\Ricky\myPortfolio\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\lmdb.h133737201210341496 0
 63C:\Users\Ricky\myPortfolio\node_modules\domhandler\package.json133737201187927611 0
@@ -122,7 +120,7 @@
 86C:\Users\Ricky\myPortfolio\node_modules\@parcel\package-manager\src\JSONParseStream.js133737201192715726 0
 46C:\Users\Ricky\myPortfolio\node_modules\parcel133737201189956652 1
 66C:\Users\Ricky\myPortfolio\node_modules\picomatch\lib\constants.js133737201186799423 0
-45C:\Users\Ricky\myPortfolio\src\juegoDeMemoria133741769487699282 1
+45C:\Users\Ricky\myPortfolio\src\juegoDeMemoria133742661034318745 1
 71C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\regions\AT.js133737201203530613 0
 95C:\Users\Ricky\myPortfolio\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt133737201211962653 0
 104C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\cjs\syntax\config\parser-selector.cjs133737201209201195 0
@@ -206,6 +204,10 @@
 75C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\regions\alt-af.js133737201191690621 0
 110C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\scope\value.js133737201211013477 0
 73C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\music\ringtones-zelda-1.mp3133614774548093441 0
+82C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\dist\csstree.js133737201211776680 0
+49C:\Users\Ricky\myPortfolio\node_modules\@trysound133737201175765427 1
+47C:\Users\Ricky\myPortfolio\src\img\gym-8-32.png133451399818906915 0
+99C:\Users\Ricky\myPortfolio\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.c133737201203968962 0
 48C:\Users\Ricky\myPortfolio\node_modules\mdn-data133737201194450634 1
 56C:\Users\Ricky\myPortfolio\node_modules\msgpackr\pack.js133737201191964258 0
 59C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\music\win.wav133593952616356493 0
@@ -346,10 +348,6 @@
 65C:\Users\Ricky\myPortfolio\src\img\Final para redes sin fondo.jpg133739807169618307 0
 82C:\Users\Ricky\myPortfolio\node_modules\source-map-js\lib\source-map-consumer.d.ts133737201191500087 0
 69C:\Users\Ricky\myPortfolio\node_modules\update-browserslist-db\cli.js133737201187207643 0
-82C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\dist\csstree.js133737201211776680 0
-49C:\Users\Ricky\myPortfolio\node_modules\@trysound133737201175765427 1
-47C:\Users\Ricky\myPortfolio\src\img\gym-8-32.png133451399818906915 0
-99C:\Users\Ricky\myPortfolio\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.c133737201203968962 0
 85C:\Users\Ricky\myPortfolio\node_modules\@parcel\runtime-browser-hmr\src\HMRRuntime.js133737201189590685 0
 73C:\Users\Ricky\myPortfolio\node_modules\htmlparser2\lib\WritableStream.js133737201189397720 0
 84C:\Users\Ricky\myPortfolio\node_modules\css-select\lib\pseudo-selectors\pseudos.d.ts133737201208899898 0
@@ -516,7 +514,7 @@
 59C:\Users\Ricky\myPortfolio\src\formularioJS\formulario.html133741760726693556 0
 86C:\Users\Ricky\myPortfolio\node_modules\css-select\node_modules\dom-serializer\LICENSE133737201186305669 0
 89C:\Users\Ricky\myPortfolio\node_modules\@popperjs\core\lib\dom-utils\getDocumentRect.d.ts133737201543262507 0
-48C:\Users\Ricky\myPortfolio\src\FlexBox\index.css133741773040439401 0
+48C:\Users\Ricky\myPortfolio\src\FlexBox\index.css133742664439131804 0
 56C:\Users\Ricky\myPortfolio\node_modules\stable\stable.js133737201187657320 0
 49C:\Users\Ricky\myPortfolio\src\FlexBox\index.html133741761139168052 0
 74C:\Users\Ricky\myPortfolio\node_modules\abortcontroller-polyfill\README.md133737201191299117 0
@@ -561,6 +559,13 @@
 50C:\Users\Ricky\myPortfolio\src\Bootstrap\blog.html133742654716438701 0
 82C:\Users\Ricky\myPortfolio\node_modules\msgpackr-extract\bin\download-prebuilds.js133737201187937533 0
 48C:\Users\Ricky\myPortfolio\node_modules\has-flag133737201188052861 1
+62C:\Users\Ricky\myPortfolio\node_modules\svgo\lib\svgo\tools.js133737201195965511 0
+91C:\Users\Ricky\myPortfolio\node_modules\@popperjs\core\lib\dom-utils\isScrollParent.js.flow133737201543863306 0
+53C:\Users\Ricky\myPortfolio\src\Bootstrap\bootstrap.js133500477050825967 0
+56C:\Users\Ricky\myPortfolio\node_modules\lmdb\index.d.cts133737201209651079 0
+69C:\Users\Ricky\myPortfolio\node_modules\css-tree\lib\syntax\create.js133737201211592361 0
+79C:\Users\Ricky\myPortfolio\node_modules\@parcel\runtime-js\src\helpers\.babelrc133737201186488848 0
+77C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\moveGroupAttrsToElems.js133737201207939110 0
 51C:\Users\Ricky\myPortfolio\src\Bootstrap\index.html133742654616043542 0
 79C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\mpeg-dash.js133737201219958155 0
 69C:\Users\Ricky\myPortfolio\node_modules\source-map\dist\source-map.js133737201192951093 0
@@ -1385,13 +1390,6 @@
 66C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\mergePaths.js133737201207712540 0
 88C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\css-grid-animation.js133737201212119664 0
 68C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\minifyStyles.js133737201207810616 0
-62C:\Users\Ricky\myPortfolio\node_modules\svgo\lib\svgo\tools.js133737201195965511 0
-53C:\Users\Ricky\myPortfolio\src\Bootstrap\bootstrap.js133500477050825967 0
-91C:\Users\Ricky\myPortfolio\node_modules\@popperjs\core\lib\dom-utils\isScrollParent.js.flow133737201543863306 0
-56C:\Users\Ricky\myPortfolio\node_modules\lmdb\index.d.cts133737201209651079 0
-69C:\Users\Ricky\myPortfolio\node_modules\css-tree\lib\syntax\create.js133737201211592361 0
-79C:\Users\Ricky\myPortfolio\node_modules\@parcel\runtime-js\src\helpers\.babelrc133737201186488848 0
-77C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\moveGroupAttrsToElems.js133737201207939110 0
 71C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\dist133737201214290662 1
 63C:\Users\Ricky\myPortfolio\node_modules\parse-json\package.json133737201187192276 0
 71C:\Users\Ricky\myPortfolio\node_modules\svgo\plugins\plugins-types.d.ts133737201207979465 0
@@ -6018,6 +6016,7 @@
 107C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\generator\index.js133737201208111495 0
 111C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\generator\sourceMap.js133737201210593025 0
 118C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\generate.js133737201205115715 0
+115C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\parse.js133737201209736460 0
 119C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\tokenizer.js133737201210820681 0
 96C:\Users\Ricky\myPortfolio\node_modules\@babel\highlight\node_modules\color-convert\CHANGELOG.md133737201186749382 0
 114C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\walk.js133737201211062353 0
