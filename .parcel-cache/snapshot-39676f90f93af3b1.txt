@@ -12,7 +12,7 @@
 102C:\Users\Ricky\myPortfolio\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md133737201205129590 0
 44C:\Users\Ricky\myPortfolio\package-lock.json133742635144428316 0
 115C:\Users\Ricky\myPortfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\parse.js133737201209736460 0
-59C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\manifest.json133620697691591860 0
+59C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\manifest.json133742655042244511 0
 70C:\Users\Ricky\myPortfolio\node_modules\@lmdb\lmdb-win32-x64\README.md133737201187076913 0
 92C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Block.cjs133737201190524529 0
 81C:\Users\Ricky\myPortfolio\node_modules\csso\cjs\restructure\3-disjoinRuleset.cjs133737201187917549 0
