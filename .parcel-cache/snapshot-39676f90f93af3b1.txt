@@ -90,7 +90,7 @@
 51C:\Users\Ricky\myPortfolio\src\Bootstrap\ambum.html133742656847960405 0
 66C:\Users\Ricky\myPortfolio\node_modules\bootstrap\js\dist\modal.js133737201543653511 0
 72C:\Users\Ricky\myPortfolio\node_modules\@mischnic\json-sourcemap\LICENSE133737201186250361 0
-56C:\Users\Ricky\myPortfolio\src\formularioJS\validados.js133741531057931636 0
+56C:\Users\Ricky\myPortfolio\src\formularioJS\validados.js133742672985523415 0
 34C:\Users\Ricky\myPortfolio\src\img133741756171685853 1
 78C:\Users\Ricky\myPortfolio\node_modules\bootstrap\dist\js\bootstrap.esm.js.map133737201545320828 0
 72C:\Users\Ricky\myPortfolio\node_modules\css-select\lib\attributes.js.map133737201195632459 0
@@ -134,7 +134,7 @@
 55C:\Users\Ricky\myPortfolio\src\MyPortfolio\projects.css133741524291726958 0
 73C:\Users\Ricky\myPortfolio\node_modules\postcss-value-parser\package.json133737201189560678 0
 93C:\Users\Ricky\myPortfolio\node_modules\csso\node_modules\css-tree\lib\syntax\atrule\media.js133737201213038762 0
-52C:\Users\Ricky\myPortfolio\src\MyPortfolio\style.css133741682572183417 0
+52C:\Users\Ricky\myPortfolio\src\MyPortfolio\style.css133742683712609786 0
 62C:\Users\Ricky\myPortfolio\node_modules\domhandler\lib\node.js133737201187424172 0
 55C:\Users\Ricky\myPortfolio\src\juegoDeMemoria\img\3.png133614707776614513 0
 85C:\Users\Ricky\myPortfolio\node_modules\caniuse-lite\data\features\getrandomvalues.js133737201216881545 0
