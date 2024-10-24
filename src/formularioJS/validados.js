@@ -87,15 +87,15 @@ function cambioModo() {
 }
 
 function muestraPassword(){
-    var contraseña = _get("#password");
+    var password = _get("#password");
     var iconoOjo = _get("#icono-ojo");
-    var valorAtrib = contraseña.getAttribute("type");
+    var valorAtrib = password.getAttribute("type");
     if(valorAtrib == "text") {
-        contraseña.setAttribute("type", "password");
+        password.setAttribute("type", "password");
         iconoOjo.classList.add("fa-eye-slash");
         iconoOjo.classList.remove("fa-eye");
     } else if (valorAtrib == "password") {
-        contraseña.setAttribute("type", "text");
+        password.setAttribute("type", "text");
         iconoOjo.classList.add("fa-eye");
         iconoOjo.classList.remove("fa-eye-slash");
     }
