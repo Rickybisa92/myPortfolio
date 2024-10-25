@@ -1,0 +1,78 @@
+
+#experience:target {
+    display: flex;
+    /* Muestra como flex cuando es objetivo */
+  }
+  
+  /* Estilos específicos para la sección #about */
+  #experience {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+  
+  }
+
+
+/* From Uiverse.io by suleymanlaarabidev */ 
+.tarjet {
+  width: 300px;
+  height: 254px;
+  background: rgb(73, 70, 92);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.tarjet:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: rgb(103, 151, 255);
+  height: 250px;
+  width: 300px;
+  margin-top: auto;
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 2;
+  border-radius: 15px;
+  color: white;
+}
+
+.tarjet:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 95%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.tarjet:hover .second-content {
+  opacity: 1;
+  margin: 10px;
+  margin-top: auto;
+  height: 100%;
+  font-size: 0.8rem;
+  transform: rotate(0deg);
+}
