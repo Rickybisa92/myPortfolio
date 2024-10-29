@@ -45,11 +45,11 @@ nav ul {
 }
 
 .left {
-  left: 20%; /* Ajusta según tu diseño */
+  left: 30%; /* Ajusta según tu diseño */
 }
 
 .right {
-  right: 20%; /* Ajusta según tu diseño */
+  right: 30%; /* Ajusta según tu diseño */
 }
 
 header:hover .nav-links {
@@ -91,12 +91,12 @@ nav ul li a:hover {
 .logo::after {
   content: '';
   display: block;
-  width: 100%; /* O ajusta al tamaño deseado */
+  width: 50%; /* O ajusta al tamaño deseado */
   height: 2px; /* Altura de la línea */
   background: black; /* Color de la línea */
   position: absolute;
   bottom: -5px; /* Ajusta la posición vertical de la línea */
-  left: 0;
+  left: 25%;
   transform: scaleX(0); /* Comienza con escala 0 */
   transition: transform 0.3s ease; /* Transición suave */
 }
@@ -140,15 +140,48 @@ section:target {
     min-height: 100vh;
   }
 
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-  nav ul {
-    justify-content: space-evenly;
-    /* Espacio entre elementos */
-  }
+header:hover .nav-links {
+  opacity: 1; /* Muestra los enlaces al pasar el ratón */
+}
 
-  nav ul li {
-    margin: 0 2px;
-    
-    /* Reducir el margen para que quepan más elementos en la pantalla */
-  }
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Para mostrar enlaces en fila en móviles también */
+.nav-links {
+  position:static;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 0;
+}
+
+.nav-links.left,
+.nav-links.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+nav ul li {
+    display: block;
+    margin: 5px 5px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
 }

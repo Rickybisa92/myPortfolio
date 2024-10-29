@@ -23,6 +23,7 @@
     z-index: 1;
     box-shadow: 0px 10px 10px rgb(73, 70, 92);
     transition: 0.5s;
+    margin-top: 30px;
   }
   
   .card:hover {
@@ -207,7 +208,6 @@
         flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
-        margin-top: 10px;
       }
     
       .card {
