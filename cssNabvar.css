@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    z-index: 1; /* Asegúrate de que el logo esté por encima */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    margin: 0 20px; /* Espaciado lateral del logo */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    opacity: 0; /* Comienza oculto */
+    transition: opacity 0.3s ease; /* Transición suave */
+    position: absolute; /* Para posicionar a los lados */
+}
+
+.left {
+    left: 20%; /* Ajusta según tu diseño */
+    transition: opacity 0.3s ease; /* Para la transición de aparición */
+}
+
+.right {
+    right: 20%; /* Ajusta según tu diseño */
+}
+
+.navbar:hover .left,
+.navbar:hover .right {
+    opacity: 1; /* Muestra los enlaces al pasar el ratón */
+}
+
+.nav-links li {
+    margin: 0 10px; /* Espaciado entre los enlaces */
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 100%; /* O ajusta al tamaño deseado */
+    height: 2px; /* Altura de la línea */
+    background: black; /* Color de la línea */
+    position: absolute;
+    bottom: -5px; /* Ajusta la posición vertical de la línea */
+    left: 0;
+    transform: scaleX(0); /* Comienza con escala 0 */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.navbar:hover .logo::after {
+    transform: scaleX(1); /* Escala a 1 al pasar el ratón */
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 20px 20px;
+}
+
+.quote ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(72, 72, 72);
+    color: white;
+    padding: 0px 100px;
+    font-size: larger;
+}
+
+h2, h3 {
+    padding-top: 50px;
+}
