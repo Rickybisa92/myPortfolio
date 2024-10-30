@@ -81,6 +81,12 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
+/* Mostrar los enlaces cuando el contenedor del logo recibe focus */
+.logo-container:focus-within .nav-links {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .logo {
   position: relative;
   z-index: 1; /* Asegúrate de que el logo esté por encima */
@@ -99,6 +105,10 @@ nav ul li a:hover {
   left: 25%;
   transform: scaleX(0); /* Comienza con escala 0 */
   transition: transform 0.3s ease; /* Transición suave */
+}
+
+.logo-container:focus-within .logo::after {
+  transform: scaleX(1);
 }
 
 header:hover .logo::after {
