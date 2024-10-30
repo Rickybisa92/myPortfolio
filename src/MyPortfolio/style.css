@@ -45,11 +45,11 @@ nav ul {
 }
 
 .left {
-  left: 30%; /* Ajusta según tu diseño */
+  left: 34%; /* Ajusta según tu diseño */
 }
 
 .right {
-  right: 30%; /* Ajusta según tu diseño */
+  right: 32%; /* Ajusta según tu diseño */
 }
 
 header:hover .nav-links {
@@ -81,11 +81,6 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
-/* Mostrar los enlaces cuando el contenedor del logo recibe focus */
-.logo-container:focus-within .nav-links {
-  opacity: 1;
-  pointer-events: auto;
-}
 
 .logo {
   position: relative;
@@ -107,9 +102,6 @@ nav ul li a:hover {
   transition: transform 0.3s ease; /* Transición suave */
 }
 
-.logo-container:focus-within .logo::after {
-  transform: scaleX(1);
-}
 
 header:hover .logo::after {
   transform: scaleX(1); /* Escala a 1 al pasar el ratón */
@@ -158,6 +150,33 @@ section:target {
 
 header:hover .nav-links {
   opacity: 1; /* Muestra los enlaces al pasar el ratón */
+}
+
+/* Mostrar los enlaces cuando el contenedor del logo recibe focus */
+.logo-container:focus-within .nav-links,
+.logo:focus + nav .nav-links,
+.logo:active + nav .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logo::after {
+  content: '';
+  display: block;
+  width: 75%; /* O ajusta al tamaño deseado */
+  height: 2px; /* Altura de la línea */
+  background: black; /* Color de la línea */
+  position: absolute;
+  bottom: -5px; /* Ajusta la posición vertical de la línea */
+  left: 13%;
+  transform: scaleX(0); /* Comienza con escala 0 */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.logo:focus::after,
+.logo:active::after,
+.logo-container:focus-within .logo::after {
+    transform: scaleX(1);
 }
 
 .navbar {
