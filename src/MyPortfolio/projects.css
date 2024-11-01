@@ -57,7 +57,6 @@
   .cards {
     display: flex;
     flex-direction: column;
-    gap: 15px;
   }
   
   .cards .card {
@@ -144,6 +143,7 @@
     color: rgb(219, 219, 219);
     cursor: pointer;
     transition: 400ms;
+    margin: 10px 10px;
   }
 
   .links {

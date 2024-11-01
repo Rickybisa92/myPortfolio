@@ -40,16 +40,16 @@ nav ul {
 .nav-links {
   display: flex;
   position: absolute; /* Para posicionar a los lados del logo */
-  opacity: 0; /* Comienza oculto */
+  opacity: 1; /* Comienza oculto */
   transition: opacity 0.3s ease; /* Transición suave */
 }
 
 .left {
-  left: 34%; /* Ajusta según tu diseño */
+  left: 28%; /* Ajusta según tu diseño */
 }
 
 .right {
-  right: 32%; /* Ajusta según tu diseño */
+  right: 25%; /* Ajusta según tu diseño */
 }
 
 header:hover .nav-links {
@@ -126,6 +126,25 @@ section:target {
   /* Mostramos la sección seleccionada */
 }
 
+/* Icono de menú hamburguesa */
+.menu-hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 10;
+}
+
+.menu-hamburguesa .linea {
+  width: 25px;
+  height: 3px;
+  background-color: #24233b;
+  margin: 5px 0;
+}
+
+
 /*ventana principal
 
 
@@ -141,76 +160,87 @@ section:target {
     background-size: cover;
     min-height: 100vh;
   }
-
-  header {
+ 
+/* Ajustes del header en móviles */
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header:hover .nav-links {
-  opacity: 1; /* Muestra los enlaces al pasar el ratón */
+/* Estilos de enlaces en móviles */
+.nav-links li {
+    display: block;
+    margin: 5px 0;
+    font-size: 15px;
 }
 
-/* Mostrar los enlaces cuando el contenedor del logo recibe focus */
-.logo-container:focus-within .nav-links,
-.logo:focus + nav .nav-links,
-.logo:active + nav .nav-links {
-    opacity: 1;
-    pointer-events: auto;
+.logo {
+    margin: 0 20px;
 }
+
 
 .logo::after {
   content: '';
   display: block;
-  width: 75%; /* O ajusta al tamaño deseado */
+  width: 100%; /* O ajusta al tamaño deseado */
   height: 2px; /* Altura de la línea */
   background: black; /* Color de la línea */
   position: absolute;
+  left: 1%;
   bottom: -5px; /* Ajusta la posición vertical de la línea */
-  left: 13%;
   transform: scaleX(0); /* Comienza con escala 0 */
   transition: transform 0.3s ease; /* Transición suave */
 }
 
-.logo:focus::after,
-.logo:active::after,
-.logo-container:focus-within .logo::after {
-    transform: scaleX(1);
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Para mostrar enlaces en fila en móviles también */
 .nav-links {
+  display: flex;
   position:static;
-  flex-direction: row;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  margin-top: 0;
+  opacity: 1; /* Comienza oculto */
+  transition: opacity 0.3s ease; /* Transición suave */
 }
 
-.nav-links.left,
-.nav-links.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+/* Mostrar el menú hamburguesa */
+.menu-hamburguesa {
+  display: flex;
 }
 
-nav ul li {
-    display: block;
-    margin: 5px 5px;
+/* Ocultar el menú de navegación por defecto en móvil */
+.navbar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: #858585;
+  flex-direction: column;
+  padding-top: 60px;
+  z-index: 5;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+/* Mostrar el menú cuando esté activo */
+.navbar.active {
+  display: flex;
+}
+
+/* Ajuste de enlaces en el menú desplegable */
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.nav-links li {
+  margin: 10px 10px;
   font-size: 15px;
 }
+
+.nav-links a {
+  color: #24233b;
+}
+
 
 }

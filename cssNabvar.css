@@ -1,56 +1,67 @@
-.navbar {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo {
-    position: relative;
-    z-index: 1; /* Asegúrate de que el logo esté por encima */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    margin: 0 20px; /* Espaciado lateral del logo */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
 }
 
-.nav-links {
+/* Menú hamburguesa */
+.menu-hamburguesa {
+    display: none; /* Visible solo en móviles */
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.menu-hamburguesa .linea {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Ocultar el menú en móviles por defecto */
+.menu {
     display: flex;
-    list-style: none;
-    opacity: 0; /* Comienza oculto */
-    transition: opacity 0.3s ease; /* Transición suave */
-    position: absolute; /* Para posicionar a los lados */
 }
 
-.left {
-    left: 20%; /* Ajusta según tu diseño */
-    transition: opacity 0.3s ease; /* Para la transición de aparición */
-}
-
-.right {
-    right: 20%; /* Ajusta según tu diseño */
-}
-
-.navbar:hover .left,
-.navbar:hover .right {
-    opacity: 1; /* Muestra los enlaces al pasar el ratón */
-}
-
-.nav-links li {
-    margin: 0 10px; /* Espaciado entre los enlaces */
-}
-
-.logo::after {
-    content: '';
-    display: block;
-    width: 100%; /* O ajusta al tamaño deseado */
-    height: 2px; /* Altura de la línea */
-    background: black; /* Color de la línea */
-    position: absolute;
-    bottom: -5px; /* Ajusta la posición vertical de la línea */
-    left: 0;
-    transform: scaleX(0); /* Comienza con escala 0 */
-    transition: transform 0.3s ease; /* Transición suave */
-}
-
-.navbar:hover .logo::after {
-    transform: scaleX(1); /* Escala a 1 al pasar el ratón */
+@media (max-width: 768px) {
+    /* Mostrar el menú hamburguesa en pantallas pequeñas */
+    .menu-hamburguesa {
+        display: flex;
+    }
+    
+    /* Ocultar el menú en dispositivos móviles */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 5px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .menu a {
+        margin: 10px 0;
+    }
+    
+    /* Mostrar el menú cuando esté activo */
+    .menu.active {
+        display: flex;
+    }
 }

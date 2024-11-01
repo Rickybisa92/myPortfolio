@@ -1,14 +1,27 @@
-<link rel="stylesheet" href="cssNabvar.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Hamburguesa</title>
+    <link rel="stylesheet" href="cssNabvar.css">
+</head>
+<body>
 
-<nav class="navbar">
-    <ul class="nav-links left">
-        <li>Link 1</li>
-        <li>Link 2</li>
-    </ul>
-    <div class="logo">Mi Logo</div>
-    <ul class="nav-links right">
-        <li>Link 3</li>
-        <li>Link 4</li>
-    </ul>
-</nav>
+<header>
+    <div class="menu-hamburguesa" onclick="toggleMenu()">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+    </div>
+    <nav id="menu" class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
+<script src="menuHambur.js"></script>
+</body>
+</html>
