@@ -11,9 +11,15 @@
   /* Asegúrate de que la fuente se aplique correctamente */
 }
 
-/* Estilo de fondo */
-body {
+/* Estilo de fondo modo dia por defecto */
+body.day-mode {
   background: url(../img/cool-background.png) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+body.night-mode {
+  background: url(../img/cool-background\(1\).png) no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
@@ -25,6 +31,13 @@ header {
   text-align: center;
   position: relative; /* Necesario para posicionar los enlaces */
 }
+
+input:checked ~ header {
+  color: #b6fbff; /* Cambia el color del texto en modo noche */
+}
+
+
+
 
 /* Estilos para el menú de navegación */
 nav {
@@ -72,11 +85,23 @@ nav ul li a {
   border-radius: 20px; /* Bordes redondeados para forma ovalada */
   transition: all 0.5s ease; /* Transiciones suaves */
 }
+input:checked ~ header nav ul li a {
+  color: #b6fbff; /* Cambia el color de los enlaces en modo noche */
+}
+
+
 
 /* Efecto hover */
 nav ul li a:hover {
   background-color: #2a2a43; /* Color de fondo al pasar el ratón */
   color: white; /* Cambiar color del texto a blanco */
+  transform: translateY(-2px) scale(1.0); /* Elevar y aumentar el tamaño */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+input:checked ~ header nav ul li a:hover {
+  background-color: #b6fbff; 
+  color: #2a2a43; 
   transform: translateY(-2px) scale(1.0); /* Elevar y aumentar el tamaño */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
@@ -100,6 +125,10 @@ nav ul li a:hover {
   left: 25%;
   transform: scaleX(0); /* Comienza con escala 0 */
   transition: transform 0.3s ease; /* Transición suave */
+}
+
+input:checked ~ header .logo::after {
+  background: #b6fbff; /* Cambia el color de la línea en modo noche */
 }
 
 
@@ -145,7 +174,44 @@ section:target {
 }
 
 
-/*ventana principal
+/* toggle */
+
+/* Estilo del toggle */
+.toggle-label {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 15px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Indicador dentro del toggle */
+.toggle-label::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-color: #24233b;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+/* Estado del toggle cuando está activado */
+input:checked + .toggle-label {
+  background-color: #7bf2ff;
+}
+
+input:checked + .toggle-label::after {
+  left: 32px;
+}
+
 
 
 
@@ -242,5 +308,43 @@ header {
   color: #24233b;
 }
 
+
+/* toggle */
+
+/* Estilo del toggle */
+.toggle-label {
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 15px;
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Indicador dentro del toggle */
+.toggle-label::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+/* Estado del toggle cuando está activado */
+input:checked + .toggle-label {
+  background-color: #555;
+}
+
+input:checked + .toggle-label::after {
+  left: 32px;
+}
 
 }

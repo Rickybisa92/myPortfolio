@@ -36,21 +36,23 @@
   .logos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
   }
   
-  .logo_html {
-    width: 70px;
-  
+  i.logo_html {
+    font-size: 100px;
+    color: #24233b;
   }
   
-  .logo_css {
-    width: 90px;
+  i.logo_css {
+    font-size: 100px;
+    color: #24233b;
   }
   
-  .logo_js {
-    width: 90px;
+  i.logo_js {
+    font-size: 100px;
+    color: #24233b;
   }
   
   
@@ -152,17 +154,13 @@
     color: white;
   }
 
-  .logo_html {
-    width: 50px;
   
   }
   
-  .logo_css {
-    width: 65px;
-  }
-  
-  .logo_js {
-    width: 65px;
+  i.logo_html {
+    font-size: 100px;
   }
 
-}
+  i.logo_css{
+    font-size: 100px;
+  }
