@@ -29,11 +29,13 @@ header {
   color: #24233b;
   padding: 10px;
   text-align: center;
-  position: relative; /* Necesario para posicionar los enlaces */
+  position: relative;
+  /* Necesario para posicionar los enlaces */
 }
 
-input:checked ~ header {
-  color: #b6fbff; /* Cambia el color del texto en modo noche */
+input:checked~header {
+  color: #b6fbff;
+  /* Cambia el color del texto en modo noche */
 }
 
 
@@ -52,21 +54,27 @@ nav ul {
 
 .nav-links {
   display: flex;
-  position: absolute; /* Para posicionar a los lados del logo */
-  opacity: 1; /* Comienza oculto */
-  transition: opacity 0.3s ease; /* Transición suave */
+  position: absolute;
+  /* Para posicionar a los lados del logo */
+  opacity: 1;
+  /* Comienza oculto */
+  transition: opacity 0.3s ease;
+  /* Transición suave */
 }
 
 .left {
-  left: 28%; /* Ajusta según tu diseño */
+  left: 28%;
+  /* Ajusta según tu diseño */
 }
 
 .right {
-  right: 25%; /* Ajusta según tu diseño */
+  right: 25%;
+  /* Ajusta según tu diseño */
 }
 
 header:hover .nav-links {
-  opacity: 1; /* Muestra los enlaces al pasar el ratón */
+  opacity: 1;
+  /* Muestra los enlaces al pasar el ratón */
 }
 
 nav ul li {
@@ -77,63 +85,89 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  color: #24233b; /* Color inicial del texto */
+  color: #24233b;
+  /* Color inicial del texto */
   font-size: larger;
   text-decoration: none;
   margin-top: 10px;
-  padding: 5px 10px; /* Espaciado alrededor del texto */
-  border-radius: 20px; /* Bordes redondeados para forma ovalada */
-  transition: all 0.5s ease; /* Transiciones suaves */
+  padding: 5px 10px;
+  /* Espaciado alrededor del texto */
+  border-radius: 20px;
+  /* Bordes redondeados para forma ovalada */
+  transition: all 0.5s ease;
+  /* Transiciones suaves */
 }
-input:checked ~ header nav ul li a {
-  color: #b6fbff; /* Cambia el color de los enlaces en modo noche */
+
+input:checked~header nav ul li a {
+  color: #b6fbff;
+  /* Cambia el color de los enlaces en modo noche */
 }
 
 
 
 /* Efecto hover */
 nav ul li a:hover {
-  background-color: #2a2a43; /* Color de fondo al pasar el ratón */
-  color: white; /* Cambiar color del texto a blanco */
-  transform: translateY(-2px) scale(1.0); /* Elevar y aumentar el tamaño */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  background-color: #2a2a43;
+  /* Color de fondo al pasar el ratón */
+  color: white;
+  /* Cambiar color del texto a blanco */
+  transform: translateY(-2px) scale(1.0);
+  /* Elevar y aumentar el tamaño */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidad */
 }
 
-input:checked ~ header nav ul li a:hover {
-  background-color: #b6fbff; 
-  color: #2a2a43; 
-  transform: translateY(-2px) scale(1.0); /* Elevar y aumentar el tamaño */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+input:checked~header nav ul li a:hover {
+  background-color: #b6fbff;
+  color: #2a2a43;
+  transform: translateY(-2px) scale(1.0);
+  /* Elevar y aumentar el tamaño */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidad */
 }
 
 
 .logo {
   position: relative;
-  z-index: 1; /* Asegúrate de que el logo esté por encima */
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  margin: 0 20px; /* Espaciado lateral del logo */
+  z-index: 1;
+  /* Asegúrate de que el logo esté por encima */
+  cursor: pointer;
+  /* Cambia el cursor al pasar el ratón */
+  margin: 0 20px;
+  /* Espaciado lateral del logo */
 }
 
 .logo::after {
   content: '';
   display: block;
-  width: 50%; /* O ajusta al tamaño deseado */
-  height: 2px; /* Altura de la línea */
-  background: black; /* Color de la línea */
+  width: 50%;
+  /* O ajusta al tamaño deseado */
+  height: 2px;
+  /* Altura de la línea */
+  background: black;
+  /* Color de la línea */
   position: absolute;
-  bottom: -5px; /* Ajusta la posición vertical de la línea */
+  bottom: -5px;
+  /* Ajusta la posición vertical de la línea */
   left: 25%;
-  transform: scaleX(0); /* Comienza con escala 0 */
-  transition: transform 0.3s ease; /* Transición suave */
+  transform: scaleX(0);
+  /* Comienza con escala 0 */
+  transition: transform 0.3s ease;
+  /* Transición suave */
 }
 
-input:checked ~ header .logo::after {
-  background: #b6fbff; /* Cambia el color de la línea en modo noche */
+input:checked~header .logo::after {
+  background: #b6fbff;
+  /* Cambia el color de la línea en modo noche */
 }
 
+input:checked~header .menu-hamburguesa .linea {
+  background-color: #b6fbff;
+}
 
 header:hover .logo::after {
-  transform: scaleX(1); /* Escala a 1 al pasar el ratón */
+  transform: scaleX(1);
+  /* Escala a 1 al pasar el ratón */
 }
 
 
@@ -178,8 +212,12 @@ section:target {
 
 /* Estilo del toggle */
 .toggle-label {
-  width: 60px;
-  height: 30px;
+  width: 65px;
+  height: 32px;
+  font-size: 20px;
+  padding: 1px; /* Espaciado interno */
+  display: flex;
+  align-items: center;
   background-color: #ccc;
   display: inline-block;
   border-radius: 15px;
@@ -188,6 +226,15 @@ section:target {
   right: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+
+.sun-icon {
+  position: absolute;
+  right: 5px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* Indicador dentro del toggle */
@@ -203,12 +250,11 @@ section:target {
   transition: left 0.3s;
 }
 
-/* Estado del toggle cuando está activado */
-input:checked + .toggle-label {
-  background-color: #7bf2ff;
+input:checked+.toggle-label {
+  background-color: #555;
 }
 
-input:checked + .toggle-label::after {
+input:checked+.toggle-label::after {
   left: 32px;
 }
 
@@ -226,125 +272,158 @@ input:checked + .toggle-label::after {
     background-size: cover;
     min-height: 100vh;
   }
- 
-/* Ajustes del header en móviles */
-header {
+
+  /* Ajustes del header en móviles */
+  header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-/* Estilos de enlaces en móviles */
-.nav-links li {
+  /* Estilos de enlaces en móviles */
+  .nav-links li {
     display: block;
     margin: 5px 0;
     font-size: 15px;
-}
+  }
 
-.logo {
+  .logo {
     margin: 0 20px;
-}
+  }
 
 
-.logo::after {
-  content: '';
-  display: block;
-  width: 100%; /* O ajusta al tamaño deseado */
-  height: 2px; /* Altura de la línea */
-  background: black; /* Color de la línea */
-  position: absolute;
-  left: 1%;
-  bottom: -5px; /* Ajusta la posición vertical de la línea */
-  transform: scaleX(0); /* Comienza con escala 0 */
-  transition: transform 0.3s ease; /* Transición suave */
-}
+  .logo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    /* O ajusta al tamaño deseado */
+    height: 2px;
+    /* Altura de la línea */
+    background: black;
+    /* Color de la línea */
+    position: absolute;
+    left: 1%;
+    bottom: -5px;
+    /* Ajusta la posición vertical de la línea */
+    transform: scaleX(0);
+    /* Comienza con escala 0 */
+    transition: transform 0.3s ease;
+    /* Transición suave */
+  }
 
-.nav-links {
-  display: flex;
-  position:static;
-  opacity: 1; /* Comienza oculto */
-  transition: opacity 0.3s ease; /* Transición suave */
-}
+  .nav-links {
+    display: flex;
+    position: static;
+    opacity: 1;
+    /* Comienza oculto */
+    transition: opacity 0.3s ease;
+    /* Transición suave */
+  }
 
-/* Mostrar el menú hamburguesa */
-.menu-hamburguesa {
-  display: flex;
-}
+  /* Mostrar el menú hamburguesa */
+  .menu-hamburguesa {
+    display: flex;
+  }
 
-/* Ocultar el menú de navegación por defecto en móvil */
-.navbar {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100vh;
-  background-color: #858585;
-  flex-direction: column;
-  padding-top: 60px;
-  z-index: 5;
-}
+  /* Ocultar el menú de navegación por defecto en móvil */
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #858585;
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 5;
+  }
 
-/* Mostrar el menú cuando esté activo */
-.navbar.active {
-  display: flex;
-}
+  /* Mostrar el menú cuando esté activo */
+  .navbar.active {
+    display: flex;
+  }
 
-/* Ajuste de enlaces en el menú desplegable */
-.nav-links {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  
-}
+  /* Ajuste de enlaces en el menú desplegable */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 
-.nav-links li {
-  margin: 10px 10px;
-  font-size: 15px;
-}
+  }
 
-.nav-links a {
-  color: #24233b;
-}
+  .nav-links li {
+    margin: 10px 10px;
+    font-size: 15px;
+  }
+
+  .nav-links a {
+    color: #24233b;
+  }
 
 
-/* toggle */
+  /* toggle */
 
-/* Estilo del toggle */
-.toggle-label {
-  width: 50px;
-  height: 20px;
-  background-color: #ccc;
-  display: inline-block;
-  border-radius: 15px;
-  position: fixed;
-  top: 25px;
-  right: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  /* Estilo del toggle */
+  .toggle-label {
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 10px; /* Espaciado opcional */
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 15px;
+    position: absolute; /* o relative, según lo que necesites */
+    top: 15px; /* Ajusta según necesites */
+    right: 10px; /* Ajusta según necesites */
+    z-index: 10; /* Asegúrate de que esté en la parte superior */
+    transition: background-color 0.3s;
+  }
 
-/* Indicador dentro del toggle */
-.toggle-label::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: left 0.3s;
-}
+  /* Indicador dentro del toggle */
+  .toggle-label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+  }
 
-/* Estado del toggle cuando está activado */
-input:checked + .toggle-label {
-  background-color: #555;
-}
+  /* Estado del toggle cuando está activado */
+  input:checked+.toggle-label {
+    background-color: #555;
+  }
 
-input:checked + .toggle-label::after {
-  left: 32px;
-}
+  input:checked+.toggle-label::after {
+    left: 32px;
+  }
+
+  .navbar {
+    display: none;
+    /* Menú cerrado por defecto */
+  }
+
+  .navbar.menu-open {
+    display: block;
+    /* Menú abierto */
+  }
+
+  .navbar {
+    display: none;
+    /* Oculto por defecto */
+  }
+
+  .navbar.menu-open {
+    display: block;
+    /* Visible cuando tiene la clase menu-open */
+  }
+
+
 
 }

@@ -134,5 +134,14 @@
     box-shadow: 0 0 0 0 black; /* Elimina la sombra */
   }
 
+  .contactos {
+    color: #2a2a43; /* Color del modo día */
+  }
+  
+  body.night-mode .contactos {
+    color: #b6fbff; /* Color del modo noche */
+  }
+  
+
   
   

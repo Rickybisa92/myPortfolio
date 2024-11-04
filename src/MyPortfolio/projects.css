@@ -54,6 +54,18 @@
     font-size: 100px;
     color: #24233b;
   }
+
+  body.night-mode i.logo_html {
+    color: #b6fbff;
+  }
+
+  body.night-mode  i.logo_css{
+    color: #b6fbff;
+  }
+
+  body.night-mode i.logo_js {
+    color: #b6fbff;
+  }
   
   
   .cards {

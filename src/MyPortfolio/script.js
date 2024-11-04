@@ -15,3 +15,18 @@ toggle.addEventListener("change", () => {
 
 // Establecer el modo día como el modo inicial
 body.classList.add("day-mode");
+
+
+function toggleMenu() {
+    document.querySelector('.navbar').classList.toggle('active');
+  }
+
+  // Seleccionar todos los enlaces del menú
+const navLinks = document.querySelectorAll('.navbar a');
+
+// Agregar evento de clic a cada enlace para cerrar el menú
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.navbar').classList.remove('active');
+  });
+});
