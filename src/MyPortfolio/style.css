@@ -342,6 +342,16 @@ input:checked+.toggle-label::after {
   /* Mostrar el menú cuando esté activo */
   .navbar.active {
     display: flex;
+    transition: menuActive 0.5s ease-in-out;
+  }
+
+  @keyframes menuActive {
+   0% {
+    transform:translate (-200px, 0)
+  }
+
+  100% { transform:translate (0, 0)
+}
   }
 
   /* Ajuste de enlaces en el menú desplegable */
