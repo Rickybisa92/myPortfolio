@@ -17,11 +17,16 @@ toggle.addEventListener("change", () => {
 body.classList.add("day-mode");
 
 
+// Función para alternar la clase 'active' en la barra de navegación
 function toggleMenu() {
-    document.querySelector('.navbar').classList.toggle('active');
-  }
+  document.querySelector('.navbar').classList.toggle('active');
+}
 
-  // Seleccionar todos los enlaces del menú
+// Seleccionar el botón de menú hamburguesa y agregarle el evento de clic
+const menuButton = document.querySelector('.menu-hamburguesa'); // Asegúrate de que tenga la clase 'menu-hamburguesa' en el HTML
+menuButton.addEventListener('click', toggleMenu);
+
+// Seleccionar todos los enlaces del menú
 const navLinks = document.querySelectorAll('.navbar a');
 
 // Agregar evento de clic a cada enlace para cerrar el menú
