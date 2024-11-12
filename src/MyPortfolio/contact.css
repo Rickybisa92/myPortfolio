@@ -41,15 +41,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10em;
+  align-items: center;
+  
 }
 
-.contacto {
+.contenedor-contact{
   width: 100%;
   display: flex;
   flex-direction: row;
-  
+  justify-content: space-evenly;
+  align-items: center;
 }
+
 
 .icono-info {
   width:80px;
@@ -148,8 +151,7 @@ textarea {
   }
 
   #contactForm {
-      width: 100%;
-      
+      width: 80%;
       padding: 20px;
       background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */
       border-radius: 8px;
@@ -164,6 +166,8 @@ textarea {
     }
 
     .text-contact1 {
+      display: flex;
+      align-items: center;
       font-size: 1.2em;
       font-weight: 400;
       font-style: italic;
@@ -177,8 +181,7 @@ textarea {
       padding: 1em;
     }
     
-    .contacto {
-      width: 100%;
+    .contenedor-contact {
       display: flex;
       flex-direction: column;
       justify-content: center;
