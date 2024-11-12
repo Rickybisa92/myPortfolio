@@ -1,5 +1,4 @@
 
-
 #contact {
   display: flex;
   padding-top: 3em;
@@ -7,8 +6,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
 
 /* Estilo del formulario */
 
@@ -93,10 +90,18 @@ textarea {
 
 @media screen and (max-width: 768px) {
 
+
+  #contact {
+    display: flex;
+    padding-top: 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   #contactForm {
       width: 80%;
       
-      max-width: 300px;
       padding: 20px;
       background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */
       border-radius: 8px;

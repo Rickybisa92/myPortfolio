@@ -96,17 +96,88 @@ transform: rotate(15deg);
   
   .about{
       font-family: "Pacifico", cursive;
+      font-size: 40px;
   }
   
   .presentacion {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 1em 5em;
-      font-size: 1.5em;
+      align-items: center;
+      padding: 1em 0em;
       font-weight: 400;
       font-style: italic;
+      margin-top: 20px;
+  }
+
+  .text-presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 450;
+    font-style: italic;
   
+  }
+
+  .contenedor-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icono-flecha {
+    width: 25%;
+    margin-top: 5%;
+    transform: rotate(40deg);
+  }
+
+  .iconos-dev {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:end;
+    padding: 0em 3em;
+  }
+
+  .icono-dev {
+    width: 25%;
+    transform: rotate(-15deg);
+    margin-right: 50px;
+    
+  }
+  
+  .icono-respon {
+    width: 25%;
+    transform: rotate(15deg);
+  }
+
+  .iconos-hobby {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:end;
+    padding: 0em 0em;
+  }
+  
+  .icono-hobby {
+    width: 30%;
+  transform: rotate(15deg);
+  }
+  
+  .icono-adventure {
+    width: 25%;
+    transform: rotate(-15deg);
+    margin-right: 50px;
+  }
+  
+  
+  .iconos-hobby {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:end;
+    padding: 0em 3em;
   }
 
 

@@ -58,6 +58,18 @@
   transform: scale(1.05);
 }
 
+.projects-text {
+  padding: 1em 20em;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.icono-bombilla {
+  margin-top: 20px;
+  width: 50px;
+}
+
 
 
 
@@ -93,5 +105,12 @@
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease;
+  }
+
+  .projects-text {
+    padding: 1em 1em;
+    font-size: 1.2em;
+    font-weight: 450;
+    font-style: italic;
   }
 }
