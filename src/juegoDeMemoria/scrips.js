@@ -45,16 +45,16 @@ let wrongAudio = new Audio('./music/wrong.wav');
 
 //Array items
 const items = [
-    { nombre: "coin", imagen: "./img/1.png" },
-    { nombre: "rubi", imagen: "./img/2.png" },
-    { nombre: "esmerald", imagen: "./img/3.png" },
-    { nombre: "baston", imagen: "./img/4.png" },
-    { nombre: "rayo", imagen: "./img/5.png" },
-    { nombre: "pocion", imagen: "./img/6.png" },
-    { nombre: "fuego", imagen: "./img/7.png" },
-    { nombre: "sombrero", imagen: "./img/8.png" },
-    { nombre: "sword", imagen: "./img/9.png" },
-    { nombre: "shield", imagen: "./img/10.png" },
+    { nombre: "coin", imagen: "/img/1.png" },
+    { nombre: "rubi", imagen: "/img/2.png" },
+    { nombre: "esmerald", imagen: "/img/3.png" },
+    { nombre: "baston", imagen: "/img/4.png" },
+    { nombre: "rayo", imagen: "/img/5.png" },
+    { nombre: "pocion", imagen: "/img/6.png" },
+    { nombre: "fuego", imagen: "/img/7.png" },
+    { nombre: "sombrero", imagen: "/img/8.png" },
+    { nombre: "sword", imagen: "/img/9.png" },
+    { nombre: "shield", imagen: "/img/10.png" },
 ];
 
 //Tiempo inicial y contadores
@@ -122,7 +122,7 @@ function generarCartas(cartaValues, rows, cols) {
     cartaValues = [...cartaValues, ...cartaValues];
     cartaValues.sort(() => Math.random() - 0.5);
 
-    const imagenDelantera = '../img/parte-delantera.png';
+    const imagenDelantera = './img/parte-delantera.png';
 
     // Iterar sobre cada posición del tablero
     for (let i = 0; i < rows * cols; i++) {
