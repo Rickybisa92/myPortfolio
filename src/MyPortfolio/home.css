@@ -60,6 +60,11 @@
 .hello {
   width: 40px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hello:hover {
+  transform: rotate(25deg);
 }
 
 
