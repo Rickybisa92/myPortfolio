@@ -1,9 +1,7 @@
-#contact:target {
-  display: flex;
-  /* Muestra como flex cuando es objetivo */
-}
+
 
 #contact {
+  display: flex;
   padding-top: 3em;
   flex-direction: column;
   justify-content: center;

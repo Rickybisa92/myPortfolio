@@ -1,10 +1,10 @@
 #about:target {
-  display: flex;
-  /* Muestra como flex cuando es objetivo */
+  
 }
 
 #about {
-  padding-top: 3em;
+  display: flex;
+  padding-top: 10em;
   flex-direction: column;
   justify-content: center;
   align-items: center;

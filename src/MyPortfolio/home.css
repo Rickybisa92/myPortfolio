@@ -1,10 +1,8 @@
-#home:target {
-  display: flex;
-  /* Muestra como flex cuando es objetivo */
-}
+
 
 #home {
-  padding: 10em 5em;
+  display: flex;
+  padding: 5em 5em 1em;
   justify-content:space-around;
   align-items: center;
 }
@@ -23,8 +21,8 @@
 /* Contenedor circular */
 .circle-container {
   background-color: gainsboro;
-  width: 250px;              /* Tamaño del círculo */
-  height: 250px;             /* Tamaño del círculo */
+  width: 350px;              /* Tamaño del círculo */
+  height: 350px;             /* Tamaño del círculo */
   border-radius: 50%;        /* Convierte el contenedor en un círculo */
   position: relative;        /* Para controlar la posición de la imagen */
   border: 5px solid #000;    /* Borde para el círculo (opcional) */
@@ -36,8 +34,8 @@
 
 /* Imagen dentro del círculo con sobreexposición */
 .circle-container img {
-  width: 270px;             /* Tamaño de la imagen mayor al contenedor para que sobresalga */
-  height: 270px;            /* Aseguramos que la imagen sea más grande que el círculo */
+  width: 370px;             /* Tamaño de la imagen mayor al contenedor para que sobresalga */
+  height: 370px;            /* Aseguramos que la imagen sea más grande que el círculo */
   object-fit: cover;        /* Hace que la imagen cubra el contenedor */
   position: absolute;       /* Posiciona la imagen en relación al contenedor */            /* Ajusta la imagen para que sobresalga por un lado */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
@@ -50,13 +48,18 @@
 
 .description {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 550;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-bottom: 0px;
 }
 
 .hello {
   width: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 
@@ -65,6 +68,27 @@
 
   .container-fluid{
       margin: 0px;
+  }
+
+  .circle-container {
+    background-color: gainsboro;
+    width: 250px;              /* Tamaño del círculo */
+    height: 250px;             /* Tamaño del círculo */
+    border-radius: 50%;        /* Convierte el contenedor en un círculo */
+    position: relative;        /* Para controlar la posición de la imagen */
+    border: 5px solid #000;    /* Borde para el círculo (opcional) */
+    display: flex;             /* Para centrar la imagen */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          /* Oculta lo que sobresalga fuera del círculo */
+  }
+
+  .circle-container img {
+    width: 270px;             /* Tamaño de la imagen mayor al contenedor para que sobresalga */
+    height: 270px;            /* Aseguramos que la imagen sea más grande que el círculo */
+    object-fit: cover;        /* Hace que la imagen cubra el contenedor */
+    position: absolute;       /* Posiciona la imagen en relación al contenedor */            /* Ajusta la imagen para que sobresalga por un lado */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
   }
 
   .navbar-logo {
@@ -102,8 +126,17 @@
 
     .description {
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 550;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .title {
+      margin-bottom: 0px;
+    }
+
+    .hello {
+      width: 40px;
+      margin-bottom: 20px;
     }
 
     
