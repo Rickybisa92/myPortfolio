@@ -144,6 +144,16 @@ section {
     margin: 0;
     padding: 0;
 }
+
+.social-icon {
+    text-decoration: none; /* Quita el subrayado */
+    color: #383838; /* Color inicial del icono */
+    margin: 0px 3px;
+    font-size: 20px;
+    position: relative; /* Necesario para el pseudo-elemento */
+    display: inline-block; /* Hace que el enlace solo ocupe el ancho del contenido */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
  
 
 }
