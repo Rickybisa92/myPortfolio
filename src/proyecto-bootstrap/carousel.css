@@ -31,10 +31,10 @@ body {
     height: 100%;
   }
 
-  .carousel-inner .carousel-item img {
-    width: 100%;        /* Asegura que la imagen ocupe todo el ancho */
-    height: 100%;       /* Asegura que la imagen ocupe todo el alto */
-    object-fit: cover;  /* Mantiene la proporción de la imagen */
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .marketing .col-lg-4 {
