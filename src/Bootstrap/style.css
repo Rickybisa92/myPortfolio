@@ -9,7 +9,23 @@ body {
     background-color: antiquewhite;
 }
 
+/* Estilos generales para todas las secciones */
+section {
+  display: none;
+  /* Ocultamos todas las secciones por defecto */
+  padding: 20px;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+  /* Efecto de transición */
+  height: 100%;
+  /* Asegúrate de que las secciones ocupen el espacio */
+}
 
+/* Mostramos la sección cuando coincide con el hash */
+section:target {
+  display: block;
+  /* Mostramos la sección seleccionada */
+}
 
 .logo-solo {
     font-family: "Dancing Script";

@@ -1,147 +1,114 @@
 #contact:target {
-    display: flex;
-    /* Muestra como flex cuando es objetivo */
-  }
-  
-  /* Estilos específicos para la sección #about */
-  #contact {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-  
-  }
+  display: flex;
+  /* Muestra como flex cuando es objetivo */
+}
 
-  
-  .contenedor-contact {
-    display: flex;
-  flex-direction: column; /* Organiza los elementos en una columna */
-  justify-content: space-around; /* Distribuye el espacio uniformemente */
-  height: 250px; /* Asigna un alto para que se vea el espacio entre los elementos */
-    
-
-  }
-  
-  .button-github {
-    background-color: #f8f8f8;
-    color: rgb(0, 0, 0);
-    padding: 10px 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 25px;
-    border: solid black 2px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
-    transition: background-color 0.3s ease-inout;
-    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0); /* Sombra inicial */
-    position: relative; /* Necesario para que funcione el efecto */
-  }
-  
-  .button-github:hover {
-    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
-    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
-    background-color: rgb(49, 49, 49);
-    color: white;
-  }
-  
-  .button-github:active {
-    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
-    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
-  }
-
-  .button-telegram {
-    background-color: #f8f8f8;
-    color: rgb(0, 0, 0);
-    padding: 10px 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 25px;
-    border: solid black 2px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
-    transition: background-color 0.3s ease-inout;
-    box-shadow: 0px 0px 0px 0px black; /* Sombra inicial */
-    position: relative; /* Necesario para que funcione el efecto */
-  }
-  
-  .button-telegram:hover {
-    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
-    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
-    background-color: rgb(0, 183, 255);
-    color: rgb(255, 255, 255);
-    
-  }
-  
-  .button-telegram:active {
-    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
-    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
-  }
+#contact {
+  padding-top: 3em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
-  .button-whatsapp {
-    background-color: #f8f8f8;
-    color: rgb(0, 0, 0);
-    padding: 10px 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 25px;
-    border: solid black 2px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
-    transition: background-color 0.3s ease-inout;
-    box-shadow: 0px 0px 0px 0px black; /* Sombra inicial */
-    position: relative; /* Necesario para que funcione el efecto */
-  }
-  
-  .button-whatsapp:hover {
-    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
-    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
-    background-color: rgb(0, 255, 106);
-    color: rgb(255, 255, 255);
-    
-  }
-  
-  .button-whatsapp:active {
-    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
-    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
-  }
 
-  .button-gmail {
-    background-color: #f8f8f8;
-    color: rgb(0, 0, 0);
-    padding: 10px 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 25px;
-    border: solid black 2px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza la animación */
-    transition: background-color 0.3s ease-inout;
-    box-shadow: 0px 0px 0px 0px black; /* Sombra inicial */
-    position: relative; /* Necesario para que funcione el efecto */
-  }
-  
-  .button-gmail:hover {
-    transform: translateY(-4px) translateX(-2px); /* Efecto 3D de elevación */
-    box-shadow: 2px 5px 0 0 black; /* Ajusta la sombra para darle profundidad */
-    background-color: rgb(255, 0, 51);
-    color: rgb(255, 255, 255);
-    
-  }
-  
-  .button-gmail:active {
-    transform: translateY(2px) translateX(1px); /* Acentúa el efecto al presionar */
-    box-shadow: 0 0 0 0 black; /* Elimina la sombra */
-  }
+/* Estilo del formulario */
 
-  .contactos {
-    color: #2a2a43; /* Color del modo día */
-  }
-  
-  body.night-mode .contactos {
-    color: #b6fbff; /* Color del modo noche */
-  }
-  
+#contactForm {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Difuminado del fondo */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  border: 1px solid rgba(212, 212, 212, 0.2); /* Borde blanco semi-transparente */
+}
 
-  
-  
+.text-contact {
+  margin-top: 0;
+  color: #333333;
+  text-align: center;
+}
+
+/* Estilo de las etiquetas y los inputs */
+label {
+  font-weight: bold;
+  color: #212121;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Estilo del botón */
+.button-send {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-send:hover {
+  background-color: #45a049;
+}
+
+/* Estilo del mensaje de respuesta */
+#responseMessage {
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#responseMessage.success {
+  color: #4CAF50;
+}
+
+#responseMessage.error {
+  color: #FF0000;
+}
+
+.logo-plane {
+  width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #contactForm {
+      width: 80%;
+      
+      max-width: 300px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px); /* Difuminado del fondo */
+      -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+      border: 1px solid rgba(212, 212, 212, 0.2); /* Borde blanco semi-transparente */
+    }
+
+    .logo-plane {
+      width: 30px;
+    }
+}

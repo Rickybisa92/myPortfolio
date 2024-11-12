@@ -1,0 +1,111 @@
+#home:target {
+  display: flex;
+  /* Muestra como flex cuando es objetivo */
+}
+
+#home {
+  padding: 10em 5em;
+  justify-content:space-around;
+  align-items: center;
+}
+
+
+
+/* Contenedor circular */
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Contenedor circular */
+.circle-container {
+  background-color: gainsboro;
+  width: 250px;              /* Tamaño del círculo */
+  height: 250px;             /* Tamaño del círculo */
+  border-radius: 50%;        /* Convierte el contenedor en un círculo */
+  position: relative;        /* Para controlar la posición de la imagen */
+  border: 5px solid #000;    /* Borde para el círculo (opcional) */
+  display: flex;             /* Para centrar la imagen */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;          /* Oculta lo que sobresalga fuera del círculo */
+}
+
+/* Imagen dentro del círculo con sobreexposición */
+.circle-container img {
+  width: 270px;             /* Tamaño de la imagen mayor al contenedor para que sobresalga */
+  height: 270px;            /* Aseguramos que la imagen sea más grande que el círculo */
+  object-fit: cover;        /* Hace que la imagen cubra el contenedor */
+  position: absolute;       /* Posiciona la imagen en relación al contenedor */            /* Ajusta la imagen para que sobresalga por un lado */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
+}
+
+.name{
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hello {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .container-fluid{
+      margin: 0px;
+  }
+
+  .navbar-logo {
+      margin: 0;
+      font-style: inherit;
+      font-weight: 500;
+      font-family: "Pacifico";
+  }
+
+  .nav-link{
+      margin: 0px 0px;
+  }
+
+  .navbar-toggler-icon {
+      color: black;
+  }
+  #home {
+    
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      padding: 5em;
+  }
+
+  .avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  .name{
+      font-family: "Pacifico", cursive;
+      font-size: 30px;
+    }
+
+    .description {
+      font-size: 15px;
+      font-weight: 700;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    
+
+}

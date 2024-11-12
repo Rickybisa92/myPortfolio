@@ -1,439 +1,135 @@
-/* Estilos generales */
-/* Estilos generales */
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
-  /* Asegúrate de que la fuente se aplique correctamente */
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo de fondo modo dia por defecto */
-body.day-mode {
-  background: url(../img/cool-background.png) no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+body {
+    background-image: url(../img/image-mesh-gradient.png);
 }
-
-body.night-mode {
-  background: url(../img/cool-background\(1\).png) no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-/* Estilos para el encabezado */
-header {
-  color: #24233b;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  /* Necesario para posicionar los enlaces */
-}
-
-input:checked~header {
-  color: #b6fbff;
-  /* Cambia el color del texto en modo noche */
-}
-
-
-
-
-/* Estilos para el menú de navegación */
-nav {
-  position: relative;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links {
-  display: flex;
-  position: absolute;
-  /* Para posicionar a los lados del logo */
-  opacity: 1;
-  /* Comienza oculto */
-  transition: opacity 0.3s ease;
-  /* Transición suave */
-}
-
-.left {
-  left: 28%;
-  /* Ajusta según tu diseño */
-}
-
-.right {
-  right: 25%;
-  /* Ajusta según tu diseño */
-}
-
-header:hover .nav-links {
-  opacity: 1;
-  /* Muestra los enlaces al pasar el ratón */
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 50px;
-  font-size: 15px;
-}
-
-nav ul li a {
-  display: inline-block;
-  color: #24233b;
-  /* Color inicial del texto */
-  font-size: larger;
-  text-decoration: none;
-  margin-top: 10px;
-  padding: 5px 10px;
-  /* Espaciado alrededor del texto */
-  border-radius: 20px;
-  /* Bordes redondeados para forma ovalada */
-  transition: all 0.5s ease;
-  /* Transiciones suaves */
-}
-
-input:checked~header nav ul li a {
-  color: #b6fbff;
-  /* Cambia el color de los enlaces en modo noche */
-}
-
-
-
-/* Efecto hover */
-nav ul li a:hover {
-  background-color: #2a2a43;
-  /* Color de fondo al pasar el ratón */
-  color: white;
-  /* Cambiar color del texto a blanco */
-  transform: translateY(-2px) scale(1.0);
-  /* Elevar y aumentar el tamaño */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /* Sombra para dar profundidad */
-}
-
-input:checked~header nav ul li a:hover {
-  background-color: #b6fbff;
-  color: #2a2a43;
-  transform: translateY(-2px) scale(1.0);
-  /* Elevar y aumentar el tamaño */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /* Sombra para dar profundidad */
-}
-
-
-.logo {
-  position: relative;
-  z-index: 1;
-  /* Asegúrate de que el logo esté por encima */
-  cursor: pointer;
-  /* Cambia el cursor al pasar el ratón */
-  margin: 0 20px;
-  /* Espaciado lateral del logo */
-}
-
-.logo::after {
-  content: '';
-  display: block;
-  width: 50%;
-  /* O ajusta al tamaño deseado */
-  height: 2px;
-  /* Altura de la línea */
-  background: black;
-  /* Color de la línea */
-  position: absolute;
-  bottom: -5px;
-  /* Ajusta la posición vertical de la línea */
-  left: 25%;
-  transform: scaleX(0);
-  /* Comienza con escala 0 */
-  transition: transform 0.3s ease;
-  /* Transición suave */
-}
-
-input:checked~header .logo::after {
-  background: #b6fbff;
-  /* Cambia el color de la línea en modo noche */
-}
-
-input:checked~header .menu-hamburguesa .linea {
-  background-color: #b6fbff;
-}
-
-header:hover .logo::after {
-  transform: scaleX(1);
-  /* Escala a 1 al pasar el ratón */
-}
-
 
 /* Estilos generales para todas las secciones */
 section {
-  display: none;
-  /* Ocultamos todas las secciones por defecto */
-  padding: 20px;
-  margin: 10px;
-  transition: all 0.5s ease-in-out;
-  /* Efecto de transición */
-  height: 100%;
-  /* Asegúrate de que las secciones ocupen el espacio */
+    display: none;
+    /* Ocultamos todas las secciones por defecto */
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+    /* Efecto de transición */
+    height: 100%;
+    /* Asegúrate de que las secciones ocupen el espacio */
+  }
+  
+  /* Mostramos la sección cuando coincide con el hash */
+  section:target {
+    display: block;
+    /* Mostramos la sección seleccionada */
+  }
+
+.container-fluid{
+    margin: 10px;
 }
 
-/* Mostramos la sección cuando coincide con el hash */
-section:target {
-  display: block;
-  /* Mostramos la sección seleccionada */
+.navbar-logo {
+    padding: 10px;
+    text-decoration: none;
+    margin: auto;
+    color: black;
+    font-size: 25px;
+    font-family: "Pacifico", cursive;
+}
+.navbar-nav {
+    font-style:inherit;
+    font-weight: 500;
+   
 }
 
-/* Icono de menú hamburguesa */
-.menu-hamburguesa {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  z-index: 10;
+.nav-link{
+    margin: 0px 20px;
 }
 
-.menu-hamburguesa .linea {
-  width: 25px;
-  height: 3px;
-  background-color: #24233b;
-  margin: 5px 0;
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Empieza con la línea oculta */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    transition: width 0.3s ease; /* Duración y suavidad de la transición */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* La línea se expande hasta el ancho completo del enlace */
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-icon {
+    text-decoration: none; /* Quita el subrayado */
+    color: #383838; /* Color inicial del icono */
+    margin: 0px 10px;
+    font-size: 20px;
+    position: relative; /* Necesario para el pseudo-elemento */
+    display: inline-block; /* Hace que el enlace solo ocupe el ancho del contenido */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Efecto al pasar el mouse (hover) */
+.social-icon:hover {
+    color: #000000; /* Cambia el color al pasar el ratón, por ejemplo, un azul para Twitter */
+}
+
+/* Pseudo-elemento para la línea debajo del icono */
+.social-icon::before {
+    content: ""; /* Necesario para crear el pseudo-elemento */
+    position: absolute;
+    bottom: 0; /* Coloca la línea en la parte inferior del enlace */
+    left: 0;
+    width: 0; /* Comienza con una longitud de 0 */
+    height: 2px; /* Altura de la línea */
+    background-color: #000000; /* Color de la línea (puedes cambiarlo según tus preferencias) */
+    transition: width 0.3s ease; /* Suaviza el crecimiento de la línea */
+}
+
+/* Cuando el usuario pasa el ratón, la línea crece */
+.social-icon:hover::before {
+    width: 100%; /* Expande la línea al 100% de la longitud del enlace */
+}
+
+.icon-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+/* Para asegurar que los enlaces de redes sociales estén alineados correctamente */
+.navbar-nav .nav-item .nav-link {
+    padding: 0; /* Eliminar el padding predeterminado de los enlaces */
+    display: inline-block; /* Evitar que el enlace se estire por todo el ancho disponible */
 }
 
 
-/* toggle */
-
-/* Estilo del toggle */
-.toggle-label {
-  width: 65px;
-  height: 32px;
-  font-size: 20px;
-  padding: 1px; /* Espaciado interno */
-  display: flex;
-  align-items: center;
-  background-color: #ccc;
-  display: inline-block;
-  border-radius: 15px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-
-.sun-icon {
-  position: absolute;
-  right: 5px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-/* Indicador dentro del toggle */
-.toggle-label::after {
-  content: "";
-  width: 26px;
-  height: 26px;
-  background-color: #24233b;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: left 0.3s;
-}
-
-input:checked+.toggle-label {
-  background-color: #555;
-}
-
-input:checked+.toggle-label::after {
-  left: 32px;
-}
-
-
-
-
-/*----------------------------------------------*/
-
+  
+  
 
 
 @media screen and (max-width: 768px) {
 
-  body {
-    background: url(../img/cool-background.png) no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-  }
-
-  /* Ajustes del header en móviles */
-  header {
+.icon-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Estilos de enlaces en móviles */
-  .nav-links li {
-    display: block;
-    margin: 5px 0;
-    font-size: 15px;
-  }
-
-  .logo {
-    margin: 0 20px;
-  }
-
-
-  .logo::after {
-    content: '';
-    display: block;
-    width: 100%;
-    /* O ajusta al tamaño deseado */
-    height: 2px;
-    /* Altura de la línea */
-    background: black;
-    /* Color de la línea */
-    position: absolute;
-    left: 1%;
-    bottom: -5px;
-    /* Ajusta la posición vertical de la línea */
-    transform: scaleX(0);
-    /* Comienza con escala 0 */
-    transition: transform 0.3s ease;
-    /* Transición suave */
-  }
-
-  .nav-links {
-    display: flex;
-    position: static;
-    opacity: 1;
-    /* Comienza oculto */
-    transition: opacity 0.3s ease;
-    /* Transición suave */
-  }
-
-  /* Mostrar el menú hamburguesa */
-  .menu-hamburguesa {
-    display: flex;
-  }
-
-  /* Ocultar el menú de navegación por defecto en móvil */
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100vh;
-    background-color: #858585;
-    flex-direction: column;
-    padding-top: 60px;
-    z-index: 5;
-  }
-
-  /* Mostrar el menú cuando esté activo */
-  .navbar.active {
-    display: flex;
-    transition: menuActive 0.5s ease-in-out;
-  }
-
-  @keyframes menuActive {
-   0% {
-    transform:translate (-200px, 0)
-  }
-
-  100% { transform:translate (0, 0)
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
-  }
-
-  /* Ajuste de enlaces en el menú desplegable */
-  .nav-links {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-
-  }
-
-  .nav-links li {
-    margin: 10px 10px;
-    font-size: 15px;
-  }
-
-  .nav-links a {
-    color: #24233b;
-  }
-
-
-  /* toggle */
-
-  /* Estilo del toggle */
-  .toggle-label {
-    cursor: pointer;
-    width: 60px;
-    height: 30px;
-    font-size: 18px;
-    margin-left: 10px; /* Espaciado opcional */
-    background-color: #ccc;
-    display: inline-block;
-    border-radius: 15px;
-    position: absolute; /* o relative, según lo que necesites */
-    top: 15px; /* Ajusta según necesites */
-    right: 10px; /* Ajusta según necesites */
-    z-index: 10; /* Asegúrate de que esté en la parte superior */
-    transition: background-color 0.3s;
-  }
-
-  /* Indicador dentro del toggle */
-  .toggle-label::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    transition: left 0.3s;
-  }
-
-  /* Estado del toggle cuando está activado */
-  input:checked+.toggle-label {
-    background-color: #555;
-  }
-
-  input:checked+.toggle-label::after {
-    left: 32px;
-  }
-
-  .navbar {
-    display: none;
-    /* Menú cerrado por defecto */
-  }
-
-  .navbar.menu-open {
-    display: block;
-    /* Menú abierto */
-  }
-
-  .navbar {
-    display: none;
-    /* Oculto por defecto */
-  }
-
-  .navbar.menu-open {
-    display: block;
-    /* Visible cuando tiene la clase menu-open */
-  }
-
-
+ 
 
 }
+
