@@ -1,7 +1,8 @@
 
 #contact {
   display: flex;
-  padding-top: 3em;
+  padding-top: 3em ;
+  padding-bottom: 5em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -23,8 +24,36 @@
 
 .text-contact {
   margin-top: 0;
-  color: #333333;
+  color: #202020;
   text-align: center;
+  
+  font-family: "Pacifico", cursive;
+}
+
+.text-contact1 {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.contacto_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10em;
+}
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.icono-info {
+  width:80px;
+  margin: 10px;
 }
 
 /* Estilo de las etiquetas y los inputs */
@@ -84,6 +113,25 @@ textarea {
   color: #FF0000;
 }
 
+#contactForm {
+  width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Difuminado del fondo */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  border: 1px solid rgba(212, 212, 212, 0.2); /* Borde blanco semi-transparente */
+}
+
+#contact {
+  display: flex;
+  padding-top: 3em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo-plane {
   width: 40px;
 }
@@ -100,7 +148,7 @@ textarea {
   }
 
   #contactForm {
-      width: 80%;
+      width: 100%;
       
       padding: 20px;
       background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */
@@ -113,5 +161,32 @@ textarea {
 
     .logo-plane {
       width: 30px;
+    }
+
+    .text-contact1 {
+      font-size: 1.2em;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .contacto_info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1em;
+    }
+    
+    .contacto {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .icono-info {
+      width:50px;
+      margin: 10px;
     }
 }
