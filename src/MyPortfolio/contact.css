@@ -10,7 +10,7 @@
 
 /* Estilo del formulario */
 
-#contactForm {
+#form {
   width: 100%;
   max-width: 400px;
   padding: 20px;
@@ -150,7 +150,7 @@ textarea {
     align-items: center;
   }
 
-  #contactForm {
+  #form {
       width: 80%;
       padding: 20px;
       background: rgba(255, 255, 255, 0.1); /* Color blanco con transparencia */

@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="work.css">
   <link rel="stylesheet" href="contact.css">
   <script src="https://kit.fontawesome.com/dffea5817d.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('-7BmoRyLLxXGOqSKX')
+</script>
   <title>MyPortfolio</title>
 </head>
 
@@ -223,49 +229,54 @@
 
       <h2 class="text-contact">Contact me <img class="logo-plane" src="../img/mail.png" alt=""></h2>
       <p class="text-contact1">If you want to know more about my projects or collaborate contact me.
-<div class="contenedor-contact">
+      <div class="contenedor-contact">
 
 
 
-    <div class="contacto_info">
-      <a href="https://wa.me/34697524449?text=Hola%20me%20gustaría%20contactar%20contigo" target="_blank">
-        <img class="icono-info" src="../img/whatsapp.png" alt="">
-      </a>
+        <div class="contacto_info">
+          <a href="https://wa.me/34697524449?text=Hola%20me%20gustaría%20contactar%20contigo" target="_blank">
+            <img class="icono-info" src="../img/whatsapp.png" alt="">
+          </a>
 
-      <a href="https://t.me/RicardoBisa" target="_blank">
-        <img class="icono-info" src="../img/telegram.png" alt="">
-      </a>
+          <a href="https://t.me/RicardoBisa" target="_blank">
+            <img class="icono-info" src="../img/telegram.png" alt="">
+          </a>
 
-      <a href="https://github.com/Rickybisa92" target="_blank">
-        <img class="icono-info" src="../img/github.png" alt="">
-      </a>
+          <a href="https://github.com/Rickybisa92" target="_blank">
+            <img class="icono-info" src="../img/github.png" alt="">
+          </a>
 
-      <a href="https://www.linkedin.com/in/ricardo-bisa%C3%B1ez-jimenez-07023017b/" target="_blank">
-        <img class="icono-info" src="../img/linkedin.png" alt="">
-      </a>
-    </div>
+          <a href="https://www.linkedin.com/in/ricardo-bisa%C3%B1ez-jimenez-07023017b/" target="_blank">
+            <img class="icono-info" src="../img/linkedin.png" alt="">
+          </a>
+        </div>
 
 
-      <form id="contactForm">
-      
-        <label for="userName">Name:</label>
-        <input type="text" id="userName" name="userName" required>
+        <form id="form">
+          <div class="field">
+            <label for="from_name">Name:</label>
+            <input type="text" name="from_name" id="from_name">
+          </div>
 
-        <label for="userEmail">Email:</label>
-        <input type="email" id="userEmail" name="userEmail" required>
+          <div class="field">
+            <label for="email_id">Email:</label>
+            <input type="text" name="email_id" id="email_id">
+          </div>
 
-        <label for="userMessage">Message:</label>
-        <textarea id="userMessage" name="userMessage" required></textarea>
-
-        <button class="button-send" type="submit">Send</button>
-      </form>
-      <!-- Mensaje de éxito o error -->
-      <div id="responseMessage" style="display:none;"></div>
-    </div>
+          <div class="field">
+            <label for="message">Message:</label>
+            <input type="text" name="message" id="message">
+          </div>
+          
+        
+          <input class="button-send" type="submit" id="button" value="Send Email">
+        </form>
     </section>
 
   </main>
 
+
+  <script src="script.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
