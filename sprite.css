@@ -1,0 +1,38 @@
+body {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sprite {
+    width: 50px;
+    height: 80px;
+    background-image: url('./src/img/mario.png');
+    background-repeat: no-repeat;
+    animation: play-sprite 2s steps(1) infinite;
+}
+
+/* Animación */
+@keyframes play-sprite {
+    0% {
+        background-position: -70px 0;
+        /* Primer fotograma */
+    }
+
+    25% {
+        background-position: -140px 0;
+        /* Segundo fotograma */
+    }
+
+    50% {
+        background-position: 0px 0;
+        /* Tercer fotograma */
+    }
+    80% {
+        background-position: -492px 0;
+        /* Primer fotograma */
+    }
+}
