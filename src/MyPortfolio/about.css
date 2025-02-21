@@ -128,6 +128,7 @@ transform: rotate(15deg);
 
   .icono-flecha {
     width: 25%;
+    aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
     margin-top: 5%;
     transform: rotate(40deg);
   }
@@ -142,6 +143,8 @@ transform: rotate(15deg);
 
   .icono-dev {
     width: 25%;
+    aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+
     transform: rotate(-15deg);
     margin-right: 50px;
     
@@ -149,6 +152,8 @@ transform: rotate(15deg);
   
   .icono-respon {
     width: 25%;
+    aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+
     transform: rotate(15deg);
   }
 
@@ -162,11 +167,15 @@ transform: rotate(15deg);
   
   .icono-hobby {
     width: 30%;
+    aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+
   transform: rotate(15deg);
   }
   
   .icono-adventure {
     width: 25%;
+    aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+
     transform: rotate(-15deg);
     margin-right: 50px;
   }
