@@ -1,0 +1,219 @@
+div {
+    color: #502208;
+    background-color: #a756a5;
+    font-size: 13px;
+    padding: 12px;
+    box-shadow: 9px 5px 18px #ba97f5;
+    text-align: right;
+  }
+
+  span {
+    background-color: #76e821;
+    font-size: 20px;
+    margin: 0px;
+    padding: 8px;
+    border-radius: 47px;
+    box-shadow: 1px 2px 20px #c18af3;
+    text-align: center;
+  }
+
+  h1 {
+    color: #8965d4;
+    background-color: #b165f7;
+    font-size: 16px;
+    margin: 17px;
+    padding: 5px;
+    border: 3px solid #5dbfeb;
+    box-shadow: 0px 4px 0px #986694;
+    opacity: 0.8;
+    transform: rotate(195deg);
+    text-align: center;
+    display: grid;
+  }
+
+  h2 {
+    color: #715cd6;
+    margin: 13px;
+    border: 1px solid #fc8a92;
+    box-shadow: 10px 7px 15px #1a900f;
+    opacity: 0.7;
+    transform: rotate(280deg);
+    text-align: right;
+  }
+
+  h3 {
+    padding: 2px;
+    border: 4px solid #f172f3;
+    opacity: 0.5;
+    transform: rotate(273deg);
+    text-align: left;
+    display: flex;
+  }
+
+  p {
+    color: #59c66a;
+    font-size: 28px;
+    border: 4px solid #1cd1ba;
+    box-shadow: 8px 6px 1px #45c02e;
+    opacity: 0.5;
+    display: flex;
+  }
+
+  a {
+    background-color: #ffd816;
+    margin: 11px;
+    padding: 1px;
+    border: 4px solid #bba358;
+    transform: rotate(325deg);
+    text-align: center;
+  }
+
+  ul {
+    color: #15e9cd;
+    margin: 5px;
+    border-radius: 22px;
+    box-shadow: 4px 5px 5px #6bdcfb;
+    opacity: 0.5;
+    transform: rotate(246deg);
+    text-align: right;
+  }
+
+  li {
+    color: #6abc23;
+    padding: 13px;
+    box-shadow: 8px 2px 2px #dd6e4b;
+    transform: rotate(222deg);
+    text-align: right;
+  }
+
+  table {
+    background-color: #d1366d;
+    font-size: 22px;
+    margin: 9px;
+    border: 5px solid #1f0de8;
+    opacity: 0.9;
+    transform: rotate(15deg);
+    display: inline;
+  }
+
+  tr {
+    background-color: #547c00;
+    font-size: 16px;
+    margin: 16px;
+    padding: 8px;
+    border: 1px solid #db3432;
+    border-radius: 38px;
+    box-shadow: 10px 8px 6px #999aa1;
+    opacity: 0.6;
+    transform: rotate(254deg);
+    text-align: center;
+  }
+
+  td {
+    background-color: #e4fdcd;
+    font-size: 27px;
+    border: 2px solid #400c44;
+    transform: rotate(272deg);
+  }
+
+  th {
+    color: #854eee;
+    background-color: #35e524;
+    font-size: 11px;
+    transform: rotate(269deg);
+  }
+
+  img {
+    padding: 16px;
+    border-radius: 27px;
+    text-align: justify;
+  }
+
+  button {
+    color: #426223;
+    background-color: #653fc8;
+    font-size: 26px;
+    opacity: 1;
+    transform: rotate(356deg);
+    text-align: left;
+    display: block;
+  }
+
+  input {
+    font-size: 27px;
+    padding: 11px;
+    border-radius: 18px;
+    box-shadow: 6px 9px 13px #4f9dc3;
+    transform: rotate(258deg);
+  }
+
+  form {
+    color: #c3ee35;
+    font-size: 27px;
+    padding: 10px;
+    border: 2px solid #717479;
+    text-align: left;
+    display: inline;
+  }
+
+  label {
+    color: #329b00;
+    border: 4px solid #f90610;
+    border-radius: 34px;
+    box-shadow: 8px 2px 5px #adbb71;
+    transform: rotate(302deg);
+    text-align: right;
+  }
+
+  section {
+    padding: 15px;
+    border: 2px solid #3c734d;
+    box-shadow: 1px 3px 8px #8e074f;
+    transform: rotate(0deg);
+  }
+
+  article {
+    color: #7c1a25;
+    background-color: #17729b;
+    font-size: 26px;
+    padding: 18px;
+    border: 2px solid #13d53f;
+    text-align: center;
+    display: inline;
+  }
+
+  header {
+    color: #335c17;
+    background-color: #1cfbe0;
+    padding: 20px;
+    box-shadow: 9px 2px 0px #e1f512;
+    opacity: 0.6;
+    transform: rotate(247deg);
+    display: block;
+  }
+
+  footer {
+    color: #140755;
+    background-color: #d62b1f;
+    font-size: 11px;
+    border-radius: 40px;
+    box-shadow: 2px 5px 15px #daefae;
+    transform: rotate(150deg);
+    display: grid;
+  }
+
+  nav {
+    font-size: 29px;
+    border: 3px solid #1a06dd;
+    box-shadow: 2px 8px 14px #565512;
+    display: grid;
+  }
+
+  aside {
+    font-size: 15px;
+    border: 4px solid #e0c688;
+    border-radius: 6px;
+    opacity: 0.8;
+    transform: rotate(7deg);
+    display: inline-block;
+  }
