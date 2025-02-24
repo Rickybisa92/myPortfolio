@@ -20,9 +20,11 @@
 
 /* Contenedor circular */
 .circle-container {
-  background-color: gainsboro;
-  width: 350px;              /* Tamaño del círculo */
-  height: 350px;             /* Tamaño del círculo */
+  background-image: url(../img/ImagenRedes.jpg);
+  background-size: cover;
+    background-position: center;
+    width: 370px;
+    height: 370px;             /* Tamaño del círculo */
   border-radius: 50%;        /* Convierte el contenedor en un círculo */
   position: relative;        /* Para controlar la posición de la imagen */
   border: 5px solid #000;    /* Borde para el círculo (opcional) */
