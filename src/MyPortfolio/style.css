@@ -7,8 +7,6 @@
 
 body {
     background-image: url(../img/image-mesh-gradient.jpg);
-    width: 100%;
-    height: 100%;
 }
 
 .curved-divider svg {
@@ -135,12 +133,6 @@ section {
 
 
 @media screen and (max-width: 768px) {
-
-    body {
-        background-image: url(../img/image-mesh-gradient.jpg);
-        width: 100%;
-        height: 100%;
-    }
 
 .icon-content {
     display: flex;
