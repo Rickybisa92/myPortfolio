@@ -13,15 +13,14 @@
   <link rel="stylesheet" href="contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/dffea5817d.js" crossorigin="anonymous" async></script>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('-7BmoRyLLxXGOqSKX')
-</script>
+  <script type="text/javascript">
+    emailjs.init('-7BmoRyLLxXGOqSKX')
+  </script>
   <title>MyPortfolio</title>
 
-  
+
 </head>
 
 <body>
@@ -52,18 +51,18 @@
         </ul>
 
         <ul class="navbar-nav d-flex">
-            <li class="nav-item">
-              <a class="social-icon" href="https://github.com/Rickybisa92" target="_blank" aria-label="GitHub"><i
-                  class="fa-brands fa-github"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="social-icon" href="https://www.linkedin.com/in/ricardo-bisa%C3%B1ez-jimenez-07023017b/"
-                target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </li>
+          <li class="nav-item">
+            <a class="social-icon" href="https://github.com/Rickybisa92" target="_blank" aria-label="GitHub"><i
+                class="fa-brands fa-github"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="social-icon" href="https://www.linkedin.com/in/ricardo-bisa%C3%B1ez-jimenez-07023017b/"
+              target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </li>
         </ul>
       </div>
     </div>
-  
+
   </nav>
 
 
@@ -78,7 +77,8 @@
       </div>
       <div class="avatar">
         <div class="circle-container">
-          <img src="img/imagenRedes_sinFondo.png" alt="Imagen de avatar de Ricardo" fetchpriority="high">
+          <img src="img/imagenRedes_sinFondo.png" alt="Imagen de avatar de Ricardo" fetchpriority="high" width="370"
+            height="370" class="circle-avatar">
         </div>
       </div>
     </section>
@@ -102,8 +102,8 @@
 
       <div class="contenedor-about">
         <div class="iconos-dev">
-          <img class="icono-dev" src="../img/coding.png" alt="">
-          <img class="icono-respon" src="../img/responsive-design.png" alt="">
+          <img class="icono-dev" src="../img/coding.png" alt="" fetchpriority="lazy">
+          <img class="icono-respon" src="../img/responsive-design.png" alt="" fetchpriority="lazy">
         </div>
 
         <div class="presentacion">
@@ -127,8 +127,8 @@
 
 
         <div class="iconos-hobby">
-          <img class="icono-hobby" src="../img/training.png" alt="">
-          <img class="icono-adventure" src="../img/adventurer.png" alt="">
+          <img class="icono-hobby" src="../img/training.png" alt="" fetchpriority="lazy">
+          <img class="icono-adventure" src="../img/adventurer.png" alt="" fetchpriority="lazy">
         </div>
       </div>
     </section>
@@ -160,7 +160,7 @@
 
           <div class="card mb-3 d-inline-block" style="max-width: 28rem;">
             <a href="../proyecto-bootstrap/indexPage.html" target="_blank">
-              <img class="card-img-top" src="../img/pryecto1.jpg" alt="Card image cap">
+              <img class="card-img-top" src="../img/pryecto1.jpg" alt="Card image cap" fetchpriority="lazy">
               <div class="card-body">
                 <h2 class="card-title h5">Responsive Web Page</h2>
                 <p>Responsive website built with Bootstrap, featuring a login system and an interactive map to enhance
@@ -175,7 +175,7 @@
 
         <div class="card mb-3 d-inline-block" style="max-width: 28rem;">
           <a href="../formularioJS/formulario.html" target="_blank">
-            <img class="card-img-top" src="../img/proyecto2.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../img/proyecto2.jpg" alt="Card image cap" fetchpriority="lazy">
             <div class="card-body">
               <h2 class="card-title h5">Form</h2>
               <p>Interactive form built with HTML, CSS, and JavaScript, featuring validations and alerts to enhance user
@@ -268,8 +268,8 @@
             <label for="message">Message:</label>
             <input type="text" name="message" id="message">
           </div>
-          
-        
+
+
           <input class="button-send" type="submit" id="button" value="Send Email">
         </form>
     </section>
