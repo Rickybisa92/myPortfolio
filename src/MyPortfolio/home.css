@@ -16,24 +16,28 @@
 
 }
 
-/* Contenedor circular */
 .circle-container {
-  width: 370px;
-  height: 370px;
-  border-radius: 50%;
-  border: 5px solid #000;
-  display: flex;
+  background-image: url(../img/ImagenRedes.jpg);
+  background-size: cover;
+    background-position: center;
+    width: 370px;
+    height: 370px;             /* Tamaño del círculo */
+  border-radius: 50%;        /* Convierte el contenedor en un círculo */
+  position: relative;        /* Para controlar la posición de la imagen */
+  border: 5px solid #000;    /* Borde para el círculo (opcional) */
+  display: flex;             /* Para centrar la imagen */
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  background-color: #f0f0f0; /* Color mientras carga */
+  overflow: hidden;          /* Oculta lo que sobresalga fuera del círculo */
 }
 
-/* Imagen dentro del círculo */
-.circle-avatar {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Imagen dentro del círculo con sobreexposición */
+.circle-container img {
+  width: 370px;             /* Tamaño de la imagen mayor al contenedor para que sobresalga */
+  height: 370px;            /* Aseguramos que la imagen sea más grande que el círculo */
+  object-fit: cover;        /* Hace que la imagen cubra el contenedor */
+  position: absolute;       /* Posiciona la imagen en relación al contenedor */            /* Ajusta la imagen para que sobresalga por un lado */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
 }
 
 .name{
