@@ -1,4 +1,10 @@
-
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6K6MmBp0u-.woff2') format('woff2');
+  }
 
 *{
     margin: 0;
