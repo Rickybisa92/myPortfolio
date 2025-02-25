@@ -1,9 +1,7 @@
-
-
 #home {
   display: flex;
   padding: 5em 5em 1em;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -22,28 +20,27 @@
 .circle-container {
   background-image: url(../img/ImagenRedes.jpg);
   background-size: cover;
-    background-position: center;
-    width: 370px;
-    height: 370px;             /* Tamaño del círculo */
-  border-radius: 50%;        /* Convierte el contenedor en un círculo */
-  position: relative;        /* Para controlar la posición de la imagen */
-  border: 5px solid #000;    /* Borde para el círculo (opcional) */
-  display: flex;             /* Para centrar la imagen */
+  background-position: center;
+  width: 370px;
+  height: 370px;
+  /* Tamaño del círculo */
+  border-radius: 50%;
+  /* Convierte el contenedor en un círculo */
+  position: relative;
+  /* Para controlar la posición de la imagen */
+  border: 5px solid #000;
+  /* Borde para el círculo (opcional) */
+  display: flex;
+  /* Para centrar la imagen */
   justify-content: center;
   align-items: center;
-  overflow: hidden;          /* Oculta lo que sobresalga fuera del círculo */
+  overflow: hidden;
+  /* Oculta lo que sobresalga fuera del círculo */
 }
 
-/* Imagen dentro del círculo con sobreexposición */
-.circle-container img {
-  width: 370px;             /* Tamaño de la imagen mayor al contenedor para que sobresalga */
-  height: 370px;            /* Aseguramos que la imagen sea más grande que el círculo */
-  object-fit: cover;        /* Hace que la imagen cubra el contenedor */
-  position: absolute;       /* Posiciona la imagen en relación al contenedor */            /* Ajusta la imagen para que sobresalga por un lado */
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
-}
 
-.name{
+
+.name {
   font-family: "Pacifico", cursive;
   font-size: 50px;
 }
@@ -51,7 +48,7 @@
 .description {
   font-size: 20px;
   font-weight: 550;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -73,65 +70,68 @@
 @media screen and (max-width: 768px) {
 
 
-  .container-fluid{
-      margin: 0px;
+  .container-fluid {
+    margin: 0px;
   }
 
   .circle-container {
-    width: 250px;              /* Tamaño del círculo */
-    height: 250px;             /* Tamaño del círculo */
+    width: 250px;
+    /* Tamaño del círculo */
+    height: 250px;
+    /* Tamaño del círculo */
   }
 
-  
+
 
   .navbar-logo {
-      margin: 0;
-      font-style: inherit;
-      font-weight: 500;
-      font-family: "Pacifico";
+    margin: 0;
+    font-style: inherit;
+    font-weight: 500;
+    font-family: "Pacifico";
   }
 
-  .nav-link{
-      margin: 0px 0px;
+  .nav-link {
+    margin: 0px 0px;
   }
 
   .navbar-toggler-icon {
-      color: black;
+    color: black;
   }
+
   #home {
-    
-      flex-direction: column-reverse;
-      justify-content: space-between;
-      padding: 5em;
+
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 5em;
   }
 
   .avatar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
   }
 
-  .name{
-      font-family: "Pacifico", cursive;
-      font-size: 30px;
-    }
+  .name {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+  }
 
-    .description {
-      font-size: 15px;
-      font-weight: 550;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+  .description {
+    font-size: 15px;
+    font-weight: 550;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 
-    .title {
-      margin-bottom: 0px;
-    }
+  .title {
+    margin-bottom: 0px;
+  }
 
-    .hello {
-      width: 40px;
-      margin-bottom: 20px;
-    }
+  .hello {
+    width: 40px;
+    margin-bottom: 20px;
+  }
 
-    
+
 
 }
