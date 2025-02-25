@@ -7,10 +7,6 @@
   align-items: center;
 }
 
-:root {
-  --avatar-bg: url(../img/ImagenRedes.jpg);
-}
-
 
 /* Contenedor circular */
 
@@ -23,7 +19,7 @@
 
 /* Contenedor circular - Escritorio */
 .circle-container {
-  background-image: var(--avatar-bg);
+  background-image: url(../img/ImagenRedes.jpg);
   background-size: cover;
   background-position: center;
   width: 370px;
@@ -79,8 +75,6 @@
     height: 250px;
     background-size: contain; /* Para reducir carga */
   }
-
-  
 
   .navbar-logo {
       margin: 0;
