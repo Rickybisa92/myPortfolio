@@ -32,8 +32,8 @@
 /* Imagen dentro del círculo */
 .circle-avatar {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Hace que la imagen llene el círculo */
+  height: auto;
+  display: block;
 }
 
 .name{
