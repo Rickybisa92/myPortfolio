@@ -135,6 +135,9 @@ textarea {
   align-items: center;
 }
 
+.logo-plane {
+  width: 40px;
+}
 
 @media screen and (max-width: 768px) {
 
