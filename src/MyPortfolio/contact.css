@@ -190,6 +190,7 @@ textarea {
     }
     .icono-info {
       width:50px;
+      height: auto;
       margin: 10px;
     }
 }
